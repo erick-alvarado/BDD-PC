@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78C0CB87-7A9E-6928-E4F1-54997101E346" name="Estudiante">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>1EB9F85A-B763-71A0-42DF-EA13AFA51E0C</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estudiante" id="80711CD0-7B95-0A6A-3A85-8B2422AFE177">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>86D57A7C-6835-5D7E-4865-F8504950FB49</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="No_Carnet" id="2A27E5ED-B55B-6E7E-E41C-A1835D64FF39">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>F1BCDF2E-3B79-B1E0-0C6E-F45B26E321C3</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Completo" id="BD135749-94FA-69C0-48F5-C09267AB100F">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>BDE1BEAC-B8E2-6298-1FF7-9A3CB21FE8D4</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ingreso_Familiar" id="FB5E4FE5-4C97-7AF8-8580-F50E36EAEFF9">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>D5F6134E-21BA-1B7D-867A-72012141A94E</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,2,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Nacimiento" id="9947B617-63E1-B7D2-0E25-59C5693EE21C">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>F323C427-A066-81EF-A2C5-33F07936D10D</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C1C9160-AF9A-D4D4-5FF0-9917239854FE" name="Estudiante_PK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>180C7FC6-8A0E-1709-4DEC-4CBC1274EA3C</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80711CD0-7B95-0A6A-3A85-8B2422AFE177"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

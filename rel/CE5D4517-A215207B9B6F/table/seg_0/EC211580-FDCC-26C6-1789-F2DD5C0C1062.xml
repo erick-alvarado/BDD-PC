@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC211580-FDCC-26C6-1789-F2DD5C0C1062" name="Salon">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>4ECA0319-A646-D1CD-4498-9BC6A7936DA0</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_salon" id="C61EF885-4796-69AA-9346-0BE8FECC4B2F">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>3D7DFC76-A308-0410-2CB9-B578FD0EA33A</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Capacidad" id="F8887A1F-629F-93E9-924D-9BACFF344D09">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>78C1468E-7AFB-6D60-124F-E7C6F1829D5C</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Edificio_id_edificio" id="903B8C33-03A3-313D-1BF4-1336C50EC301">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>439344A9-83CF-9710-EF50-BA4FB0056D63</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="894F7D7D-6B0A-83F4-1398-6A94454DA3E8" referredColumn="0E13AF46-6BE9-B131-3CBB-93453E61CED2"/>
+</associations>
+</Column>
+<Column name="Salon_ID" id="C7DE6DC2-737B-A370-9DA0-3DD04D8BCF7A">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2F51B33-7CA4-6D15-461C-FE8D663472D3" name="Salon_PK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="C7DE6DC2-737B-A370-9DA0-3DD04D8BCF7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D6E394D-5BF2-188C-A2D4-282A9FCD0828" name="Salon_Edificio_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>2C26EBCC-CC90-2441-5781-6E4D1B614209</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="903B8C33-03A3-313D-1BF4-1336C50EC301"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

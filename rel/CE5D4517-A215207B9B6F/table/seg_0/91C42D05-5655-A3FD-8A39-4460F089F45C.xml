@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="91C42D05-5655-A3FD-8A39-4460F089F45C" name="Pensum_Curso">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>4C4F951A-62A5-DC95-F6DF-3712BCBE422B</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="32B30F18-A322-2E0E-CB16-F81E47FAF0CF">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>A95E0639-4595-437A-AC24-94676FCE9A04</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pensum_id_pensum" id="A8DEF545-F063-CDD5-6FA0-CBF893369153">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>CA7DAF5A-A6EC-99B9-C543-0DF4334093F5</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59B7A3C0-265B-0796-EE47-00158A4C594E" referredColumn="4DCB57AC-52F9-0790-BD7B-4BBB9A9CA931"/>
+</associations>
+</Column>
+<Column name="Curso_id_curso" id="1AE1915E-AA63-AFDB-FC4D-55FB7FE08F92">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>0DFE59C3-BCB4-BDEC-7446-B979E859E19E</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84AB6EA6-96E8-4F5A-F5E2-FC89EE876EE9" referredColumn="5A197735-ACC4-423E-6CF4-751526319C2C"/>
+</associations>
+</Column>
+<Column name="fecha" id="025C79AA-4EA9-C79C-40E7-76972BAF9F22">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>3B8BD1B7-1712-97F1-7892-22AC9A3256CF</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_id_tipo" id="2CBB2A97-E33B-1972-E296-D533577E2B1A">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>DA203A0B-1DEE-D0C6-F9CA-D039724A2466</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C24ADF7D-ED20-F7BA-D0C9-262206E9E3E3" referredColumn="81D3425E-45F9-D98C-3778-31FA106BA223"/>
+</associations>
+</Column>
+<Column name="creditos_necesarios" id="FED89E2B-B181-9A62-23B9-E7FBF695AE3B">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>436552AF-25FF-EA89-2355-3B92EB9E8093</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="615DE281-132A-FA46-33CF-250B28C65361" name="Pensum_Curso_PK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>8C533428-D544-A8D5-5ED2-A96BDE716A36</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8DEF545-F063-CDD5-6FA0-CBF893369153"/>
+<colUsage columnID="1AE1915E-AA63-AFDB-FC4D-55FB7FE08F92"/>
+<colUsage columnID="32B30F18-A322-2E0E-CB16-F81E47FAF0CF"/>
+<colUsage columnID="2CBB2A97-E33B-1972-E296-D533577E2B1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F010D977-EBDC-BE82-CFA5-779F04FD13A9" name="Pensum_Curso_Pensum_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>F6C3267A-B1F9-CA57-0D12-736811324FAF</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8DEF545-F063-CDD5-6FA0-CBF893369153"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="671AE8E9-94D3-8107-A636-7865B0FB66B7" name="Pensum_Curso_Curso_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>2F8DE003-960E-85EF-1250-1E679C0CC75C</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AE1915E-AA63-AFDB-FC4D-55FB7FE08F92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EF86665-4ACA-F60D-446E-2E53390AC6F1" name="Pensum_Curso_Tipo_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>7368947D-E98C-28E1-D504-258BAFB635C2</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CBB2A97-E33B-1972-E296-D533577E2B1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

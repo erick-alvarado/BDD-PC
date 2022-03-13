@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="95B34E0E-2003-C258-69C7-71F6A90588F7" name="Inscripcion">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>C2ACC827-0159-9DAB-B93B-BA8299088E92</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_inscripción" id="69A9F77B-3567-527C-5A70-CDF2F4D61B23">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>3865F9F5-D165-EE47-44A6-EBBE16F7B629</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_de_Inscripcion" id="59C918BA-E724-64BF-22A5-8A91BF7F905E">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>B96C156F-AAE9-36D1-C7A7-94EB3D39E3F6</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Plan_de_Estudio_id_plan" id="447C698B-B665-4953-62AE-6B11A60F1381">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>7249C9E9-2F3C-A93A-1CB3-7CD7FA87E777</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6D475F3-E686-778E-155B-84D43D769E2B" referredColumn="70178FB3-D7B3-B404-484C-EC2637D157C2"/>
+</associations>
+</Column>
+<Column name="Estudiante_id_estudiante" id="CF69F978-0E1F-AC48-BFD4-5BE0D7AA3853">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>A9885A89-4B85-B9B4-55C8-3385F1D5CEB0</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61967EE5-FDE2-A824-2686-42B63F009CEE" referredColumn="80711CD0-7B95-0A6A-3A85-8B2422AFE177"/>
+</associations>
+</Column>
+<Column name="Carrera_id_carrera" id="979CC25E-7C69-C3EA-63F7-82BB6F8CDB49">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>8D73FFCF-0BD4-FAED-38ED-18A25D98460D</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1262C81C-C2B7-C683-7507-34D5635394E6" referredColumn="A0C17652-FBAF-0EF8-0376-067AAA5D22C4"/>
+</associations>
+</Column>
+<Column name="Plan_id_plan" id="E278991B-9E6D-F068-28A3-360CC0ECB59A">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>7FC2D1EF-7400-73F2-38A8-32BE9D047817</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18288B62-13BE-0869-DBA0-13209FDD7DBC" referredColumn="F63A1A23-A806-CFBA-71F9-72F68BCB3247"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6972C7F2-1E16-58ED-C1A8-D9146D8A4756" name="Inscripcion_PK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>CD5BF4D1-A39E-2ADC-50C0-2B74EB69D171</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69A9F77B-3567-527C-5A70-CDF2F4D61B23"/>
+<colUsage columnID="E278991B-9E6D-F068-28A3-360CC0ECB59A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B7112E5-ABD8-5EC3-F8CC-C128A664D7CA" name="Inscripcion_Estudiante_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>8273C0B0-6BBA-63FA-0E09-9B16171A7C2E</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF69F978-0E1F-AC48-BFD4-5BE0D7AA3853"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E6AC9E6-50F8-B15B-C619-6F435E255D6A" name="Inscripcion_Plan_de_Estudio_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>294A9527-5BA9-EE1C-BEAF-C67F89EBFC37</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="447C698B-B665-4953-62AE-6B11A60F1381"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B3D5AF9-A799-BC9A-4041-185F587163CC" name="Inscripcion_Carrera_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>159D9657-71A2-CDB9-261E-6B1CA67E37D9</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="979CC25E-7C69-C3EA-63F7-82BB6F8CDB49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3013FA9-D229-3DCF-98B6-582B88299299" name="Inscripcion_Plan_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>B8090672-D94C-7859-1269-7A8E0725ECF0</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E278991B-9E6D-F068-28A3-360CC0ECB59A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

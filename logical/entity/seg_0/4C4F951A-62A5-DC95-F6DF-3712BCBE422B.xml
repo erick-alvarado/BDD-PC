@@ -81,14 +81,27 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="creditos_necesarios" id="436552AF-25FF-EA89-2355-3B92EB9E8093">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 16:07:51 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="8C533428-D544-A8D5-5ED2-A96BDE716A36" name="Pensum_Curso PK">
 <createdBy>crist</createdBy>
 <createdTime>2022-03-13 04:00:06 UTC</createdTime>
 <ownerDesignName>nuevo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.4.2.059.0838
---   en:        2022-03-13 10:25:53 CST
+--   en:        2022-03-13 15:28:13 CST
 --   sitio:      Oracle Database 21c
 --   tipo:      Oracle Database 21c
 
@@ -8,18 +8,6 @@
 -- predefined type, no DDL - MDSYS.SDO_GEOMETRY
 
 -- predefined type, no DDL - XMLTYPE
-
-CREATE TABLE asignacion_curso ( 
---  ERROR: Column name length exceeds maximum allowed length(30) 
-    asignacion_de_curso_id_asignacion INTEGER NOT NULL,
-    asignacion_de_curso_id_seccion    INTEGER NOT NULL,
-    curso_id_curso                    INTEGER NOT NULL
-);
-
-ALTER TABLE asignacion_curso
-    ADD CONSTRAINT relation_20_pk PRIMARY KEY ( asignacion_de_curso_id_asignacion,
-                                                asignacion_de_curso_id_seccion,
-                                                curso_id_curso );
 
 CREATE TABLE asignacion_de_curso (
     id_asignacion        INTEGER NOT NULL,
@@ -50,6 +38,18 @@ CREATE TABLE curso (
 );
 
 ALTER TABLE curso ADD CONSTRAINT curso_pk PRIMARY KEY ( id_curso );
+
+CREATE TABLE curso_asignacion ( 
+--  ERROR: Column name length exceeds maximum allowed length(30) 
+    asignacion_de_curso_id_asignacion INTEGER NOT NULL,
+    asignacion_de_curso_id_seccion    INTEGER NOT NULL,
+    curso_id_curso                    INTEGER NOT NULL
+);
+
+ALTER TABLE curso_asignacion
+    ADD CONSTRAINT relation_20_pk PRIMARY KEY ( asignacion_de_curso_id_asignacion,
+                                                asignacion_de_curso_id_seccion,
+                                                curso_id_curso );
 
 CREATE TABLE curso_prerrequisito (
     id_prerrequisito        INTEGER NOT NULL,
@@ -98,14 +98,14 @@ CREATE TABLE estudiante (
 
 ALTER TABLE estudiante ADD CONSTRAINT estudiante_pk PRIMARY KEY ( id_estudiante );
 
-CREATE TABLE estudiante_asignacion (
+CREATE TABLE estudiante_asignacionc (
     estudiante_id_estudiante          INTEGER NOT NULL, 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
     asignacion_de_curso_id_asignacion INTEGER NOT NULL,
     asignacion_de_curso_id_seccion    INTEGER NOT NULL
 );
 
-ALTER TABLE estudiante_asignacion
+ALTER TABLE estudiante_asignacionc
     ADD CONSTRAINT relation_19_pk PRIMARY KEY ( estudiante_id_estudiante,
                                                 asignacion_de_curso_id_asignacion,
                                                 asignacion_de_curso_id_seccion );
@@ -138,7 +138,7 @@ CREATE TABLE pensum_curso (
     curso_id_curso      INTEGER NOT NULL,
     fecha               DATE NOT NULL,
     tipo_id_tipo        INTEGER NOT NULL,
-    criditos_necesarios INTEGER NOT NULL
+    creditos_necesarios INTEGER NOT NULL
 );
 
 ALTER TABLE pensum_curso
@@ -204,12 +204,12 @@ CREATE TABLE seccion (
 
 ALTER TABLE seccion ADD CONSTRAINT seccion_pk PRIMARY KEY ( id_seccion );
 
-CREATE TABLE seccion_periono (
+CREATE TABLE seccion_periodo (
     seccion_id_seccion INTEGER NOT NULL,
     periodo_id_periodo INTEGER NOT NULL
 );
 
-ALTER TABLE seccion_periono ADD CONSTRAINT relation_27_pk PRIMARY KEY ( seccion_id_seccion,
+ALTER TABLE seccion_periodo ADD CONSTRAINT relation_27_pk PRIMARY KEY ( seccion_id_seccion,
                                                                         periodo_id_periodo );
 
 CREATE TABLE seccion_salon (
@@ -278,32 +278,32 @@ ALTER TABLE plan
         REFERENCES carrera ( id_carrera );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE estudiante_asignacion
+ALTER TABLE estudiante_asignacionc
     ADD CONSTRAINT relation_19_asignacion_de_curso_fk FOREIGN KEY ( asignacion_de_curso_id_asignacion,
                                                                     asignacion_de_curso_id_seccion )
         REFERENCES asignacion_de_curso ( id_asignacion,
                                          seccion_id_seccion );
 
-ALTER TABLE estudiante_asignacion
+ALTER TABLE estudiante_asignacionc
     ADD CONSTRAINT relation_19_estudiante_fk FOREIGN KEY ( estudiante_id_estudiante )
         REFERENCES estudiante ( id_estudiante );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE asignacion_curso
+ALTER TABLE curso_asignacion
     ADD CONSTRAINT relation_20_asignacion_de_curso_fk FOREIGN KEY ( asignacion_de_curso_id_asignacion,
                                                                     asignacion_de_curso_id_seccion )
         REFERENCES asignacion_de_curso ( id_asignacion,
                                          seccion_id_seccion );
 
-ALTER TABLE asignacion_curso
+ALTER TABLE curso_asignacion
     ADD CONSTRAINT relation_20_curso_fk FOREIGN KEY ( curso_id_curso )
         REFERENCES curso ( id_curso );
 
-ALTER TABLE seccion_periono
+ALTER TABLE seccion_periodo
     ADD CONSTRAINT relation_27_periodo_fk FOREIGN KEY ( periodo_id_periodo )
         REFERENCES periodo ( id_periodo );
 
-ALTER TABLE seccion_periono
+ALTER TABLE seccion_periodo
     ADD CONSTRAINT relation_27_seccion_fk FOREIGN KEY ( seccion_id_seccion )
         REFERENCES seccion ( id_seccion );
 

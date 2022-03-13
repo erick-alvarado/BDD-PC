@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F12FD1A6-4C0F-9B63-D3F6-C3317BFAC7C6" name="Estudiante_AsignacionC">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<ordsAlias>relation_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Estudiante_id_estudiante" id="CFFBA6FC-2ABF-6B17-B9B5-1FEBB52EDD2C">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6831AB02-62B6-FCC7-68C9-ABBA88DBF98D" referredColumn="80711CD0-7B95-0A6A-3A85-8B2422AFE177"/>
+</associations>
+</Column>
+<Column name="Asignacion_De_Curso_id_asignacion" id="45A0F0F0-0D8D-0CE8-F378-AA4AAC3621B4">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0A2609D-7C39-2E2E-B1F8-5AAB073E9BC4" referredColumn="6897E5AA-4AC2-21FA-B1B4-90D2057DE3C7"/>
+</associations>
+</Column>
+<Column name="Asignacion_De_Curso_id_seccion" id="543FF568-A797-AA2D-2556-689774D96A4D">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0A2609D-7C39-2E2E-B1F8-5AAB073E9BC4" referredColumn="83C17E10-E1C1-CA40-A9F5-2271AC8FF663"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9BF3C43-D5C3-D567-56ED-2D6E88BA2D40" name="Relation_19_PK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFFBA6FC-2ABF-6B17-B9B5-1FEBB52EDD2C"/>
+<colUsage columnID="45A0F0F0-0D8D-0CE8-F378-AA4AAC3621B4"/>
+<colUsage columnID="543FF568-A797-AA2D-2556-689774D96A4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86D70AC7-EE3A-1114-7F69-565C37EB8A0B" name="Relation_19_Estudiante_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>4D764569-3141-991F-3EA3-58DF3B226EF3</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFFBA6FC-2ABF-6B17-B9B5-1FEBB52EDD2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4A65174-C9BB-F2A0-BFE0-1925C6764D83" name="Relation_19_Asignacion_De_Curso_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>4D764569-3141-991F-3EA3-58DF3B226EF3</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45A0F0F0-0D8D-0CE8-F378-AA4AAC3621B4"/>
+<colUsage columnID="543FF568-A797-AA2D-2556-689774D96A4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DF03F075-8881-2421-8DBA-AAD7A406B1FF" name="Periono_Dia">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<ordsAlias>relation_32</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Periodo_id_periodo" id="008833E5-2415-CE72-9BF4-53E510A0DB80">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7EE6533-548D-B182-AF21-1E75A671F786" referredColumn="D8888762-A31E-4A7A-D900-98046E0F0575"/>
+</associations>
+</Column>
+<Column name="Dia_id_dia" id="F19FEA2E-4D7D-B65B-84E1-F8BFED282B66">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7270F381-1482-C759-4A0A-650818ACAD8D" referredColumn="2EA9530F-10A9-790B-C6F9-466927B3582C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5012DF62-1B0A-5515-04FE-226B33A0B0BC" name="Relation_32_PK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="008833E5-2415-CE72-9BF4-53E510A0DB80"/>
+<colUsage columnID="F19FEA2E-4D7D-B65B-84E1-F8BFED282B66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4317546-E62D-CAF5-7570-F34683DCE787" name="Relation_32_Periodo_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>3D5ECB53-F4A6-A03A-43C0-FAB973AEEFA5</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="008833E5-2415-CE72-9BF4-53E510A0DB80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4B1D573-A608-0C59-0697-F2C28A1AB8E5" name="Relation_32_Dia_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>3D5ECB53-F4A6-A03A-43C0-FAB973AEEFA5</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F19FEA2E-4D7D-B65B-84E1-F8BFED282B66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3012F6A-A383-AEDB-4AED-0CB229CB7558" name="Curso_Prerrequisito">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>A93E393C-695E-6969-3406-29AD85F210EB</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_prerrequisito" id="5D648077-8356-31EA-A8B4-AABB494BE0BB">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>6CCCD4F9-4F10-21D8-A4BA-65F7033990F0</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Codigo" id="8B08A008-E7D0-2A11-C236-B445EDEF0C18">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>73D83905-D3D6-7FF6-F89B-44285D923C45</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Codigo_de_Prerrequisito" id="1DBBCAE3-E0BD-E468-177B-ADB7F3570080">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>661BC46F-36F9-2BDC-A52D-75587980FBC0</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Curso_id_curso" id="BC88387E-D4E9-842F-304E-9CD59C4388B9">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>091FDA9C-DACB-98A8-0446-B34079691BE3</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15B46144-0FCF-90D9-9490-DB31F9AF7A02" referredColumn="5A197735-ACC4-423E-6CF4-751526319C2C"/>
+</associations>
+</Column>
+<Column name="Curso_id_curso2" id="EDB96DCC-E698-04F6-2534-E41370649F98">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>058EE843-009F-4908-0DAA-CB9645138585</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F429064-DCB1-7094-D9FB-FB735B93C227" referredColumn="5A197735-ACC4-423E-6CF4-751526319C2C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C66F83FF-2546-4EE6-6A87-AFFBF5609C2D" name="Curso_Prerrequisito_PK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>FAA6B266-538F-9AA2-522C-55E2518615F6</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D648077-8356-31EA-A8B4-AABB494BE0BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="531451C6-FA11-0787-CAA0-3A208163AA36" name="Curso_Prerrequisito_Curso_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>1297CF36-0089-9555-C22C-EA6CE006FA14</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC88387E-D4E9-842F-304E-9CD59C4388B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CDB7D1C-6DA0-E8E9-EF89-32DABE528F58" name="Curso_Prerrequisito_Curso_FKv2">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>ACECC151-20EB-102F-5B4A-D0F42A3F5558</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDB96DCC-E698-04F6-2534-E41370649F98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

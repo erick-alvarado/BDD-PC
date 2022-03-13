@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A97910CD-FE10-09D5-0CDE-A45AE66E887E" name="Seccion">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>C72C064A-1C57-BDDA-E0DB-4F9B1A467526</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_seccion" id="232CD586-EC9D-1443-5062-7E0549A722A2">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>9BE8539C-52A3-E324-C0F4-0033A94CE766</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo" id="F1C31FF8-282B-0DE3-E945-C407BEAD0748">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>DC93B03D-DD6D-96D3-178D-5E4E4D279301</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Año" id="CE9A40E2-DEA6-BE44-9CA2-22BEC49036F5">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>6392F41C-1066-186A-0D6B-D2ADC6AA3B77</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ciclo" id="781661A6-CCBB-DB52-FD8B-E25DFD76B002">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>2C64D1DF-E01D-3560-7DF1-688AE3F266B8</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Docente_id_docente" id="414CF40C-3F12-5AFA-6F34-8752A9FC04A4">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>C87BC0D4-6F33-64CA-83D4-5C0E845009F4</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B32EB7F3-72D3-DD09-01CC-003A8CB2B72C" referredColumn="5BE6FD8D-472A-863F-4995-2E4BD6305D9D"/>
+</associations>
+</Column>
+<Column name="Curso_id_curso" id="AFEB256A-8126-6BEB-CF5D-78C019A0E429">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>EBDF3C62-DE32-BA54-AA9E-C0F46952B14B</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE34797F-C72C-3B39-C1B2-63E40C1E0C36" referredColumn="5A197735-ACC4-423E-6CF4-751526319C2C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5BE2295A-5DC3-C94C-A9F4-3ABCA0FDB941" name="Seccion_PK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>3A4DC0FA-E0DC-5CF7-7BAC-6AC81A48FF3F</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="232CD586-EC9D-1443-5062-7E0549A722A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34CBDC30-F99A-AA7D-1446-8ACC373C37C5" name="Seccion_Docente_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>B454EA58-6CAF-BA36-BF01-217E6209B8CB</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="414CF40C-3F12-5AFA-6F34-8752A9FC04A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A23E990-60D3-9E4B-CAC8-4A925202E9EE" name="Seccion_Curso_FK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 21:16:46 UTC</createdTime>
+<generatorID>5E515E86-1EAA-91C4-FEA7-91E65AFE3391</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFEB256A-8126-6BEB-CF5D-78C019A0E429"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

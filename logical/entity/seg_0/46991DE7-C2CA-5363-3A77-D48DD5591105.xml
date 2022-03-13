@@ -27,19 +27,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Codigo Curso" id="0E35CC24-66D7-3C7E-CFB9-004591234FCE">
-<createdBy>krlos</createdBy>
-<createdTime>2022-03-10 05:10:41 UTC</createdTime>
-<ownerDesignName>nuevo</ownerDesignName>
-<engineerTo>
-<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>25 CHAR</dataTypeSize>
-<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="Nombre" id="97E1F597-199E-B7D1-4AC0-3DF36A7E72F1">
 <createdBy>krlos</createdBy>
 <createdTime>2022-03-10 05:11:07 UTC</createdTime>
@@ -52,6 +39,42 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="creditos" id="24D0FA5D-2CEF-D442-AAA1-4C2F76AD3BA8">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 15:56:25 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zona_minima" id="A72248A5-375B-5200-A6F7-B9A5AF6109B8">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 15:58:04 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nota_de_aprobacion" id="0C4AAA96-5AAD-0DAE-D443-A4A6415C7B25">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 15:58:36 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4ECA0319-A646-D1CD-4498-9BC6A7936DA0" name="Salon">
-<createdBy>krlos</createdBy>
-<createdTime>2022-03-10 05:06:59 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="347A9D95-23DC-0934-515E-CF14F73714FB" name="Edificio">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 16:02:36 UTC</createdTime>
 <ownerDesignName>nuevo</ownerDesignName>
 <engineerTo>
 <item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
@@ -15,43 +15,44 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_salon" id="3D7DFC76-A308-0410-2CB9-B578FD0EA33A">
-<createdBy>krlos</createdBy>
-<createdTime>2022-03-10 05:07:05 UTC</createdTime>
-<ownerDesignName>nuevo</ownerDesignName>
-<engineerTo>
-<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Capacidad" id="78C1468E-7AFB-6D60-124F-E7C6F1829D5C">
-<createdBy>krlos</createdBy>
-<createdTime>2022-03-10 05:08:17 UTC</createdTime>
-<ownerDesignName>nuevo</ownerDesignName>
-<engineerTo>
-<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_edificio" id="439344A9-83CF-9710-EF50-BA4FB0056D63">
+<Attribute name="id_edificio" id="478EF7E0-4FA3-D1AA-6B1B-2F1BCBFC7B8E">
 <createdBy>crist</createdBy>
-<createdTime>2022-03-13 16:03:39 UTC</createdTime>
-<generatorID>2C26EBCC-CC90-2441-5781-6E4D1B614209</generatorID>
+<createdTime>2022-03-13 16:02:44 UTC</createdTime>
 <ownerDesignName>nuevo</ownerDesignName>
 <engineerTo>
 <item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
 </engineerTo>
-<referedAttribute>478EF7E0-4FA3-D1AA-6B1B-2F1BCBFC7B8E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="E2187663-6BFD-D0E0-C53C-C32AD1475763">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 16:03:05 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C51C8B55-167F-0B31-822C-5B5CAFBC32F9" name="Edificio PK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 16:03:16 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>478EF7E0-4FA3-D1AA-6B1B-2F1BCBFC7B8E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
