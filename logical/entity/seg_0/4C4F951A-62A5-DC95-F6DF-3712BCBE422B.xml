@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4C4F951A-62A5-DC95-F6DF-3712BCBE422B" name="Pensum_Curso">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 03:59:08 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="A95E0639-4595-437A-AC24-94676FCE9A04">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 03:59:40 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pensum" id="CA7DAF5A-A6EC-99B9-C543-0DF4334093F5">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 04:00:06 UTC</createdTime>
+<generatorID>F6C3267A-B1F9-CA57-0D12-736811324FAF</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<referedAttribute>7D46EBC3-3F15-6BF5-7AD4-B47548B42A65</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_curso" id="0DFE59C3-BCB4-BDEC-7446-B979E859E19E">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 04:00:20 UTC</createdTime>
+<generatorID>2F8DE003-960E-85EF-1250-1E679C0CC75C</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<referedAttribute>F71A4DFE-51A9-8FE5-B981-A03E53E7DDCE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="3B8BD1B7-1712-97F1-7892-22AC9A3256CF">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 04:03:24 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tipo" id="DA203A0B-1DEE-D0C6-F9CA-D039724A2466">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 04:03:50 UTC</createdTime>
+<generatorID>7368947D-E98C-28E1-D504-258BAFB635C2</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<referedAttribute>1983A4D6-32D5-2A8E-2A0A-4A34B33E6BF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8C533428-D544-A8D5-5ED2-A96BDE716A36" name="Pensum_Curso PK">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 04:00:06 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CA7DAF5A-A6EC-99B9-C543-0DF4334093F5</attributeRef>
+<attributeRef>0DFE59C3-BCB4-BDEC-7446-B979E859E19E</attributeRef>
+<attributeRef>A95E0639-4595-437A-AC24-94676FCE9A04</attributeRef>
+<attributeRef>DA203A0B-1DEE-D0C6-F9CA-D039724A2466</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

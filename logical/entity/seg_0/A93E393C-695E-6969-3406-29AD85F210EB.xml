@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A93E393C-695E-6969-3406-29AD85F210EB" name="Curso Prerrequisito">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:30:19 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_prerrequisito" id="6CCCD4F9-4F10-21D8-A4BA-65F7033990F0">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:30:33 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Codigo" id="73D83905-D3D6-7FF6-F89B-44285D923C45">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:30:49 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Codigo de Prerrequisito" id="661BC46F-36F9-2BDC-A52D-75587980FBC0">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:31:15 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_curso" id="091FDA9C-DACB-98A8-0446-B34079691BE3">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 01:51:34 UTC</createdTime>
+<generatorID>1297CF36-0089-9555-C22C-EA6CE006FA14</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F71A4DFE-51A9-8FE5-B981-A03E53E7DDCE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_curso1" id="058EE843-009F-4908-0DAA-CB9645138585">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 04:16:01 UTC</createdTime>
+<generatorID>ACECC151-20EB-102F-5B4A-D0F42A3F5558</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<referedAttribute>F71A4DFE-51A9-8FE5-B981-A03E53E7DDCE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FAA6B266-538F-9AA2-522C-55E2518615F6" name="Curso Prerrequisito PK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:30:48 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6CCCD4F9-4F10-21D8-A4BA-65F7033990F0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

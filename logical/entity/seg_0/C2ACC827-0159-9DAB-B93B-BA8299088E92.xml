@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C2ACC827-0159-9DAB-B93B-BA8299088E92" name="Inscripcion">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-09 17:55:42 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_inscripción" id="3865F9F5-D165-EE47-44A6-EBBE16F7B629">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-09 17:55:49 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha de Inscripcion" id="B96C156F-AAE9-36D1-C7A7-94EB3D39E3F6">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-09 18:02:39 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_plan" id="7249C9E9-2F3C-A93A-1CB3-7CD7FA87E777">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 01:48:41 UTC</createdTime>
+<generatorID>294A9527-5BA9-EE1C-BEAF-C67F89EBFC37</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<referedAttribute>DCC22F43-3317-74E4-3AAE-D869D292388F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estudiante" id="A9885A89-4B85-B9B4-55C8-3385F1D5CEB0">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 03:24:54 UTC</createdTime>
+<generatorID>8273C0B0-6BBA-63FA-0E09-9B16171A7C2E</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>86D57A7C-6835-5D7E-4865-F8504950FB49</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_carrera" id="8D73FFCF-0BD4-FAED-38ED-18A25D98460D">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 03:25:23 UTC</createdTime>
+<generatorID>159D9657-71A2-CDB9-261E-6B1CA67E37D9</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<referedAttribute>333C5438-18AC-928B-1AF3-8EA1B5B6B2B9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_plan1" id="7FC2D1EF-7400-73F2-38A8-32BE9D047817">
+<createdBy>crist</createdBy>
+<createdTime>2022-03-13 03:56:13 UTC</createdTime>
+<generatorID>B8090672-D94C-7859-1269-7A8E0725ECF0</generatorID>
+<ownerDesignName>nuevo</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<referedAttribute>1D457896-A6FC-DE45-EE02-41421F15E01F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CD5BF4D1-A39E-2ADC-50C0-2B74EB69D171" name="Inscripcion PK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-09 17:56:02 UTC</createdTime>
+<ownerDesignName>nuevo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3865F9F5-D165-EE47-44A6-EBBE16F7B629</attributeRef>
+<attributeRef>7FC2D1EF-7400-73F2-38A8-32BE9D047817</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
