@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA15B107-2363-6C89-9A4F-A7F738BEC6E9" name="Clases_en_Curso">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>30F13DE4-5FC0-F949-200B-F929E1AAA15D</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_enCurso" id="0C5899B8-34BC-C37F-044C-06E5F8144F34">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>DFACA09A-DE02-8F74-1D4B-DC7538105074</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="1EE24899-9965-3991-2040-E3D9819C7859">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>0AA4C7CA-A68F-2FFF-39A1-903EA30F8C06</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nota_de_aprovacion" id="9773B5E2-44AF-3EFB-B3A9-89D0F824E007">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>619001E2-28BA-8923-5862-C92E5170EB36</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zona_minima" id="641CC898-A0BE-CE25-B0DA-00334F7817C4">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>C38B4562-9FFE-01EC-D1CA-68B6B560CC37</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dereho_a_Examen_Final" id="3846BCB5-1EB9-D978-4F24-D138CF10B634">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>DE0AB04F-4F02-F081-01D9-343B8E24356F</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Curso_prerrequisito" id="862EDB88-68B1-966D-61AE-1302E4B8169B">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>3DE030DB-DD9D-5BDA-8DCC-615B773276D2</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estudiante_id_estudiante" id="4AE9A4D3-C522-AB7B-2872-8FB9E428FC74">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>8580BBA3-7FA6-BC28-B77F-93CD1B6F6398</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC4E0220-A5E6-84A9-B2E3-B36651867A6F" referredColumn="D4DC16D7-8566-D3FE-2A63-20809B313819"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="683566A1-E071-9C52-D364-747368B27A98" name="Clases_en_Curso_PK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>A7BB3064-23D7-D41A-2443-45EE9AC54009</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C5899B8-34BC-C37F-044C-06E5F8144F34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFC326B6-4F18-3C85-D5B7-551925F6D059" name="Clases_en_Curso_Estudiante_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>DDBF7F45-A857-0E76-DC7C-BC3524BB016A</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AE9A4D3-C522-AB7B-2872-8FB9E428FC74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

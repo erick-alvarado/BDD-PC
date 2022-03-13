@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="410A90F0-0E4F-FD4F-7F73-ECB54A4DB5E7" name="Relation_3">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Carrera_id_carrera" id="4B6C0575-F722-C9C1-1155-DB3219801FD6">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A601E9A7-9D76-86AE-6039-FC4C26E83B5D" referredColumn="0B19F13E-CCB6-F252-E5AF-9D0484B11ED1"/>
+</associations>
+</Column>
+<Column name="Estudiante_id_estudiante" id="E42BDF80-A2ED-261E-9EC1-0783977B07AF">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4542D43B-3B18-28AE-6FDD-BCB97F3D81F3" referredColumn="D4DC16D7-8566-D3FE-2A63-20809B313819"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF844FDF-9244-6245-CB99-F5A944A6F1EB" name="Relation_3_PK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B6C0575-F722-C9C1-1155-DB3219801FD6"/>
+<colUsage columnID="E42BDF80-A2ED-261E-9EC1-0783977B07AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0049FD7E-28B4-D33E-0006-C2A1D4886338" name="Relation_3_Carrera_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>506B2C2A-7B5F-3048-2023-D26D8DE99E13</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B6C0575-F722-C9C1-1155-DB3219801FD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90794949-3540-0D16-A454-A15F5859BE64" name="Relation_3_Estudiante_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>506B2C2A-7B5F-3048-2023-D26D8DE99E13</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E42BDF80-A2ED-261E-9EC1-0783977B07AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

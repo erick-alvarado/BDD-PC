@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB0F1ED1-CCCE-F349-F57B-3F48CEE742BD" name="Periodo">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>8761EB84-06AD-96E3-4377-53A2CA507567</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_periodo" id="9306AEE6-B2A1-5527-E814-003E4C960D40">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>A13B98AE-7CB2-3BEE-B462-1F732BEBB0FF</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Codigo_Periodo" id="A0E959FD-C09E-7369-8483-A5CA19C12B47">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>E7E3383C-D2A3-4EB2-29DD-91E0F5BAF643</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hora_Inicio" id="D7EA54A7-33F4-4FC9-B7AF-992762531A9B">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>06B5ABEA-36F8-72CD-3EC1-1C4493329D4F</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hora_Fin" id="4E333E4F-6D38-70D7-EB8D-57C71D315DEF">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>02DFE017-5A7F-3C81-38BD-6882456FB412</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_del_curso" id="E6AD9D0F-B44D-0E8D-48FB-AFDFDF452B65">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>FDC5F882-3420-F8D2-F29C-617C2F41CEA8</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="No_de_Dia" id="7F350AE1-BAA0-E938-4952-C9E7BED11680">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>E6F28DF4-5D94-2A55-E653-AB62EEA1508B</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0A34242-0ABE-8346-B45B-F2B555E5BB8D" name="Periodo_PK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>8D6154C1-3AF8-08C5-C974-E01E8D76F873</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9306AEE6-B2A1-5527-E814-003E4C960D40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

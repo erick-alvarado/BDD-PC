@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="15F97660-9DFE-965A-CD30-2FEA5F1EF4CF" name="Docente">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-09 17:47:14 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_docente" id="27EDADC2-5EC7-6B2D-44BC-59F00F7B67ED">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-09 17:47:21 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Codigo Docente" id="7D6193FE-4138-3BBE-6058-87B0E171EAB8">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:05:29 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="6E0A551E-7266-0E4C-07BF-AF343410CCB9">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:06:00 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Sueldo" id="1AEE0C3B-9B36-B50B-258C-920244BD4224">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:06:22 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,2,6</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0B4BBF46-CF40-9D1C-3684-C32C9C72A44A" name="Docente PK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-09 17:47:31 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>27EDADC2-5EC7-6B2D-44BC-59F00F7B67ED</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

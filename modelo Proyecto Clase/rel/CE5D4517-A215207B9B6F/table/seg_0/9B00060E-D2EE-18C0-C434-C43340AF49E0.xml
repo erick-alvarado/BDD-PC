@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B00060E-D2EE-18C0-C434-C43340AF49E0" name="Relation_19">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Estudiante_id_estudiante" id="4323E5DD-51BF-8783-EAA6-A5E70535B629">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8489446-82CB-230D-F6A3-3D09A4873146" referredColumn="D4DC16D7-8566-D3FE-2A63-20809B313819"/>
+</associations>
+</Column>
+<Column name="Asignacion_De_Curso_id_asignacion" id="9A7D518D-6DCD-D72B-75BE-4017800CC778">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1EF1B8CA-8E6A-6F1E-2080-F2E66B45BAA7" referredColumn="57B91437-174B-C825-CB2F-3CBF3616F4FC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39A3D329-4CA8-C4C7-650F-2DD9B090FF3E" name="Relation_19_PK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4323E5DD-51BF-8783-EAA6-A5E70535B629"/>
+<colUsage columnID="9A7D518D-6DCD-D72B-75BE-4017800CC778"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8491F47-B659-13AD-52FE-8B489DEF8775" name="Relation_19_Estudiante_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>4D764569-3141-991F-3EA3-58DF3B226EF3</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4323E5DD-51BF-8783-EAA6-A5E70535B629"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2981475-920B-EE38-8A25-A8B6BA0C589A" name="Relation_19_Asignacion_De_Curso_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>4D764569-3141-991F-3EA3-58DF3B226EF3</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A7D518D-6DCD-D72B-75BE-4017800CC778"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

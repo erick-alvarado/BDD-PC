@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1B242BA-B61F-D2B0-DB9E-008DEC53CFB8" name="Pensum">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>2E93F934-3971-1C75-B4EF-1CA6B034006F</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pensum" id="F9F9BD65-6D82-CE17-3920-160663DD08BC">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>7D46EBC3-3F15-6BF5-7AD4-B47548B42A65</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Curso" id="AEB489E9-2A60-BF07-3488-FD119949BD06">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>4BD94B3D-B528-AA07-6CEA-0D8C33D1DA0C</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Obligatorio" id="D82BA831-777A-6383-E349-FEF2DE13C345">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>9D385257-0A85-5367-8E07-891AD9539225</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero_de_Creditos" id="9A0DBF32-565C-D0F7-59F2-ED761DB7D13F">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>0B8394C5-1851-EA0F-2AC3-C0472AE693B8</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nota_de_Aprobación" id="19BCF7D1-6ED0-76C2-4396-8B02280BFB24">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>09CA5B49-03ED-6B09-B58C-C81DF3B39663</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zona_mínima" id="1489F14F-77FA-6E18-4B41-0EBF7758A315">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>E67558B3-E5D8-C471-DD82-6FA00642F7CF</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cursos_pre-requisitos" id="44DE78FF-C361-AD6B-AC15-8A998A90CB7A">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>410274B9-DBC2-7611-B2CE-7AB2C32EDEC0</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Carrera_id_carrera" id="DC1B07C3-D396-C787-5F18-DFDD9F1920CA">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>99D8BDE4-5C0C-2CAE-F911-BE27B477EF60</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E254F0F-8CDF-5F7D-D80B-46B05E395447" referredColumn="0B19F13E-CCB6-F252-E5AF-9D0484B11ED1"/>
+</associations>
+</Column>
+<Column name="Plan_id_plan" id="093D3F02-2D68-32BF-8601-25A21E35F53B">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>0C77C53C-F757-353C-9950-B1D21E6DFAA6</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1429E5F8-759E-033F-1750-72BC8820D3F9" referredColumn="24502C9E-FC4F-3547-A423-F2A86E3E3DA9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5CDE876-3E53-EA4E-9A29-AF3D1CB04F19" name="Pensum_PK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>AA76E03D-5CCC-1F89-403D-6AB0A8FF59A7</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9F9BD65-6D82-CE17-3920-160663DD08BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="710157A2-586B-32AE-A0FD-C243E2E69691" name="Pensum__IDX">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4F8F2C8E-07AC-6BEB-89A5-940DA3321C71</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="093D3F02-2D68-32BF-8601-25A21E35F53B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E167E5A-46BD-5F29-16D3-FC522425CE35" name="Pensum_Carrera_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>B4A97E86-07C0-0614-0D41-91D52B81511F</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC1B07C3-D396-C787-5F18-DFDD9F1920CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1270D706-D50B-015C-5CBB-18595A75EDD6" name="Pensum_Plan_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>4F8F2C8E-07AC-6BEB-89A5-940DA3321C71</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="093D3F02-2D68-32BF-8601-25A21E35F53B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

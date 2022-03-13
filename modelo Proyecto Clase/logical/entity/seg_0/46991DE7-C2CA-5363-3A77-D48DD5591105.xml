@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="46991DE7-C2CA-5363-3A77-D48DD5591105" name="Curso">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-09 19:03:40 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_curso" id="F71A4DFE-51A9-8FE5-B981-A03E53E7DDCE">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-09 19:03:47 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Codigo Curso" id="0E35CC24-66D7-3C7E-CFB9-004591234FCE">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:10:41 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="97E1F597-199E-B7D1-4AC0-3DF36A7E72F1">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:11:07 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_docente" id="5103ADF3-BAA3-2991-159E-24794A69850B">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:44:13 UTC</createdTime>
+<generatorID>1C8D4E12-8A0E-CD9D-066C-EDA587D3DC71</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<referedAttribute>27EDADC2-5EC7-6B2D-44BC-59F00F7B67ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_horario" id="ADEF6C67-3E62-11C2-8B3D-4834BB46A8FD">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 05:45:08 UTC</createdTime>
+<generatorID>CA963E6E-8203-C8B8-56EC-274ADA5A6705</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<referedAttribute>29B9D778-2219-2BDF-4C84-90CB3EEF3DA2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0DA6FA18-A885-313F-C234-3A24DDA045C3" name="Curso PK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-09 19:04:00 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<engineerTo>
+<item key="CE5D4517-0E87-453F-94BE-A215207B9B6F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F71A4DFE-51A9-8FE5-B981-A03E53E7DDCE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

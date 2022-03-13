@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2E254F0F-8CDF-5F7D-D80B-46B05E395447" containerWithKeyObject="A1B242BA-B61F-D2B0-DB9E-008DEC53CFB8" localFKIndex="9E167E5A-46BD-5F29-16D3-FC522425CE35" name="Pensum_Carrera_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>B4A97E86-07C0-0614-0D41-91D52B81511F</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<referredTableLongName>Carrera</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CA7D60DB-2752-767C-87E0-017FBFA7A4E9</referredTableID>
+<keyObject>AD669760-12BB-7DFA-95BA-927141A4F817</keyObject>
+<referredKeyID>AD669760-12BB-7DFA-95BA-927141A4F817</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_carrera</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

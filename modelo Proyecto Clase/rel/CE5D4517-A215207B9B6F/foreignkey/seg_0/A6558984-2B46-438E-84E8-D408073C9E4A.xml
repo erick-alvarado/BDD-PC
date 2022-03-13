@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A6558984-2B46-438E-84E8-D408073C9E4A" containerWithKeyObject="8ED5E832-D266-20BC-9325-89E0BB3D05EF" localFKIndex="95BD6A72-8C19-062F-E9BD-4A19DE2DE191" name="Plan_Pensum_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>4F8F2C8E-07AC-6BEB-89A5-940DA3321C71</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<referredTableLongName>Pensum</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A1B242BA-B61F-D2B0-DB9E-008DEC53CFB8</referredTableID>
+<keyObject>C5CDE876-3E53-EA4E-9A29-AF3D1CB04F19</keyObject>
+<referredKeyID>C5CDE876-3E53-EA4E-9A29-AF3D1CB04F19</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pensum</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

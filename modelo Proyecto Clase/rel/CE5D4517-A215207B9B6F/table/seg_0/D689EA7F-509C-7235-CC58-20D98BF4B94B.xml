@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D689EA7F-509C-7235-CC58-20D98BF4B94B" name="Relation_9">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Curso_id_curso" id="C03F795C-B168-07FA-0EF4-71D7B814E79B">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6254B55-AD2B-1C54-FB21-B41D694AA419" referredColumn="A38CE45C-F612-0BC3-4FE1-64DDF83493C2"/>
+</associations>
+</Column>
+<Column name="Periodo_id_periodo" id="12836E62-4B0B-9F84-D0CD-BEE403EABB50">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A2070E4-307E-F624-3771-13C22BFAB859" referredColumn="9306AEE6-B2A1-5527-E814-003E4C960D40"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6CB71658-0967-A788-C77E-BF1691767C9E" name="Relation_9_PK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C03F795C-B168-07FA-0EF4-71D7B814E79B"/>
+<colUsage columnID="12836E62-4B0B-9F84-D0CD-BEE403EABB50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19653CE5-9A7D-923C-52A2-021D09D8F675" name="Relation_9_Curso_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>0F8A5686-B69B-9098-C1D9-C9E99A917659</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C03F795C-B168-07FA-0EF4-71D7B814E79B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA8D946C-25E4-3E56-F9A0-45774BF18911" name="Relation_9_Periodo_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>0F8A5686-B69B-9098-C1D9-C9E99A917659</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12836E62-4B0B-9F84-D0CD-BEE403EABB50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

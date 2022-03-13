@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7C9278C-F143-AF8E-F231-BB75617BC97D" name="Relation_17">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Docente_id_docente" id="DC2FEDDC-CE30-F11F-E223-8E07F7B89130">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77C33A88-AB9A-2D7E-61F6-C1211502CA28" referredColumn="96E8066E-5162-64DA-7B8C-771821DC2132"/>
+</associations>
+</Column>
+<Column name="Seccion_id_seccion" id="3E454248-F55D-8DCD-539F-0A4D46357C14">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2171C5A-675E-A7E0-9770-56098CBB818B" referredColumn="00D84207-E0BF-EB43-1C52-48497C8C0F6C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59AD3A03-8548-74E9-B01D-B0D0EC7961E1" name="Relation_17_PK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC2FEDDC-CE30-F11F-E223-8E07F7B89130"/>
+<colUsage columnID="3E454248-F55D-8DCD-539F-0A4D46357C14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76484DB9-55BB-702C-587D-AF4549488114" name="Relation_17_Docente_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>B454EA58-6CAF-BA36-BF01-217E6209B8CB</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC2FEDDC-CE30-F11F-E223-8E07F7B89130"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="216B45FC-8D2D-BD1D-A0C3-982992A7D227" name="Relation_17_Seccion_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>B454EA58-6CAF-BA36-BF01-217E6209B8CB</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E454248-F55D-8DCD-539F-0A4D46357C14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

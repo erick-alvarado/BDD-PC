@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3CEA3762-33BE-DC44-5087-5E3CF9A2D19F" containerWithKeyObject="DDC4284E-674B-A0AF-6A3E-EDA72F6C270C" localFKIndex="655917C8-1CBD-7667-E10D-B46B260F2F47" name="Relation_21_Curso_Prerrequisito_FK">
+<createdBy>krlos</createdBy>
+<createdTime>2022-03-10 06:06:03 UTC</createdTime>
+<generatorID>1297CF36-0089-9555-C22C-EA6CE006FA14</generatorID>
+<ownerDesignName>modelo Proyecto Clase</ownerDesignName>
+<referredTableLongName>Curso_Prerrequisito</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>327421F9-83B5-6064-1B07-19CF8F4EAF90</referredTableID>
+<keyObject>1BF82DE6-84D8-94F3-86FC-CCE79ADB7E39</keyObject>
+<referredKeyID>1BF82DE6-84D8-94F3-86FC-CCE79ADB7E39</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_prerrequisito</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
