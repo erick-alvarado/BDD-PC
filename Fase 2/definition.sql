@@ -8,6 +8,48 @@
 -- predefined type, no DDL - MDSYS.SDO_GEOMETRY
 
 -- predefined type, no DDL - XMLTYPE
+CREATE TABLE carrera (
+    carrera INTEGER NOT NULL,
+    nombre  VARCHAR2(50 CHAR) NOT NULL
+);
+
+ALTER TABLE carrera ADD CONSTRAINT carrera_pk PRIMARY KEY ( carrera );
+
+CREATE TABLE estudiante (
+    carnet          INTEGER NOT NULL,
+    nombre          VARCHAR2(50 CHAR) NOT NULL,
+    ingresofamiliar NUMBER(10, 2) NOT NULL,
+    fechanacimiento DATE NOT NULL
+);
+
+ALTER TABLE estudiante ADD CONSTRAINT estudiante_pk PRIMARY KEY ( carnet );
+
+CREATE TABLE curso (
+    codigo INTEGER NOT NULL,
+    nombre VARCHAR2(50 CHAR) NOT NULL
+);
+
+ALTER TABLE curso ADD CONSTRAINT curso_pk PRIMARY KEY ( codigo );
+
+CREATE TABLE inscrito (
+    carrera           INTEGER NOT NULL,
+    carnet            INTEGER NOT NULL,
+    fechainscripcion  DATE NOT NULL,
+    estudiante_carnet INTEGER NOT NULL,
+    carrera_carrera   INTEGER NOT NULL
+);
+
+ALTER TABLE inscrito
+    ADD CONSTRAINT inscrito_pk PRIMARY KEY ( carrera,
+                                             carnet,
+                                             estudiante_carnet,
+                                             carrera_carrera );
+
+
+
+
+
+
 
 CREATE TABLE asignacion (
     zona                    INTEGER NOT NULL,
@@ -24,12 +66,7 @@ ALTER TABLE asignacion
                                                seccion_codigo,
                                                seccion_catedratico_cat );
 
-CREATE TABLE carrera (
-    carrera INTEGER NOT NULL,
-    nombre  VARCHAR2(50 CHAR) NOT NULL
-);
 
-ALTER TABLE carrera ADD CONSTRAINT carrera_pk PRIMARY KEY ( carrera );
 
 CREATE TABLE catedratico (
     cat           INTEGER NOT NULL,
@@ -39,12 +76,7 @@ CREATE TABLE catedratico (
 
 ALTER TABLE catedratico ADD CONSTRAINT catedratico_pk PRIMARY KEY ( cat );
 
-CREATE TABLE curso (
-    codigo INTEGER NOT NULL,
-    nombre VARCHAR2(50 CHAR) NOT NULL
-);
 
-ALTER TABLE curso ADD CONSTRAINT curso_pk PRIMARY KEY ( codigo );
 
 CREATE TABLE dia (
     dia    INTEGER NOT NULL,
@@ -53,14 +85,7 @@ CREATE TABLE dia (
 
 ALTER TABLE dia ADD CONSTRAINT dia_pk PRIMARY KEY ( dia );
 
-CREATE TABLE estudiante (
-    carnet          INTEGER NOT NULL,
-    nombre          VARCHAR2(50 CHAR) NOT NULL,
-    ingresofamiliar NUMBER(5, 2) NOT NULL,
-    fechanacimiento DATE NOT NULL
-);
 
-ALTER TABLE estudiante ADD CONSTRAINT estudiante_pk PRIMARY KEY ( carnet );
 
 CREATE TABLE horario (
     seccion_seccion         VARCHAR2(2 CHAR) NOT NULL,
@@ -86,19 +111,7 @@ ALTER TABLE horario
                                             periodo_periodo,
                                             dia_dia );
 
-CREATE TABLE inscrito (
-    carrera           INTEGER NOT NULL,
-    carnet            INTEGER NOT NULL,
-    fechainscripcion  DATE NOT NULL,
-    estudiante_carnet INTEGER NOT NULL,
-    carrera_carrera   INTEGER NOT NULL
-);
 
-ALTER TABLE inscrito
-    ADD CONSTRAINT inscrito_pk PRIMARY KEY ( carrera,
-                                             carnet,
-                                             estudiante_carnet,
-                                             carrera_carrera );
 
 CREATE TABLE pensum (
     obligatoriedad       CHAR(1 CHAR) NOT NULL,
@@ -127,9 +140,9 @@ ALTER TABLE periodo ADD CONSTRAINT periodo_pk PRIMARY KEY ( periodo );
 CREATE TABLE plan (
     plan              VARCHAR2(10 CHAR) NOT NULL,
     nombre            VARCHAR2(50 CHAR) NOT NULL,
-    añoinicial        VARCHAR2(4 CHAR) NOT NULL,
+    aï¿½oinicial        VARCHAR2(4 CHAR) NOT NULL,
     cicloinicial      VARCHAR2(50 CHAR) NOT NULL,
-    añofinal          VARCHAR2(4 CHAR) NOT NULL,
+    aï¿½ofinal          VARCHAR2(4 CHAR) NOT NULL,
     ciclofinal        VARCHAR2(50 CHAR) NOT NULL,
     numcreditoscierre INTEGER NOT NULL,
     carrera_carrera   INTEGER NOT NULL
@@ -181,7 +194,7 @@ ALTER TABLE salon ADD CONSTRAINT salon_pk PRIMARY KEY ( edificio,
 
 CREATE TABLE seccion (
     seccion         VARCHAR2(2 CHAR) NOT NULL,
-    año             VARCHAR2(4 CHAR) NOT NULL,
+    aï¿½o             VARCHAR2(4 CHAR) NOT NULL,
     ciclo           VARCHAR2(50 CHAR) NOT NULL,
     curso_codigo    INTEGER NOT NULL,
     catedratico_cat INTEGER NOT NULL
