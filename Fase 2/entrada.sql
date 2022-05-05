@@ -14,14 +14,17 @@ insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (2
 
 
 
-insert into carrera values 	(01 , 'Ingenieria Ambiental'),
-							(02 , 'Ingenieria Industrial'),
-							(03 , 'Ingenieria Mecanica Industrial'),
-							(04 , 'Ingenieria Quimica'),
-							(05 , 'Ingenieria Sistemas'),
-							(06 , 'Ingenieria Mecanica'),
-							(07 , 'Ingenieria Electrica'),
-							(08 , 'Ingenieria Civil');
+insert all 
+into carrera values (01 , 'Ingenieria Ambiental')
+into carrera values	(02 , 'Ingenieria Industrial')
+into carrera values (03 , 'Ingenieria Mecanica Industrial')
+into carrera values (04 , 'Ingenieria Quimica')
+into carrera values	(05 , 'Ingenieria Sistemas')
+into carrera values	(06 , 'Ingenieria Mecanica')
+into carrera values	(07 , 'Ingenieria Electrica')
+into carrera values	(08 , 'Ingenieria Civil')
+SELECT * FROM dual; 
+
 
 insert into inscrito values (02 , 2012012345 , '19/11/2021'),
 							(08 , 2013012345 , '21/11/2021'),
@@ -54,16 +57,19 @@ insert into pensum values 	(001 , 'Mixta' , 01 , '1' , 250 , 61 , 36 , 46),
 							(009 , 'Mixta' , 07 , '1' , 250 , 61 , 36 , 46),
 							(0010 , 'Vespertina' , 08 , '1' , 250 , 61 , 36 , 46);
 
-insert into curso values 	(0100 , 'Matematica Basica 1'),
-							(0101 , 'Quimica General 1'),
-							(0113 , 'Matematica Basica 2'),
-							(0125 , 'Fisica Basica'),
-							(0137 , 'Fisica 1'),
-							(0149 , 'Fisica 2'),
-							(0152 , 'Matematica Intermedia 2'),
-							(0164 , 'Orientación y Liderazgo'),
-							(0176 , 'Matematica Intermedia 1'),
-							(0188 , 'Deportes 1');
+insert all 
+into curso values (0100 , 'Matematica Basica 1')
+into curso values (0101 , 'Quimica General 1')
+into curso values (0113 , 'Matematica Basica 2')
+into curso values (0125 , 'Fisica Basica')
+into curso values (0137 , 'Fisica 1')
+into curso values (0149 , 'Fisica 2')
+into curso values (0152 , 'Matematica Intermedia 2')
+into curso values (0164 , 'Orientación y Liderazgo')
+into curso values (0176 , 'Matematica Intermedia 1')
+into curso values (0188 , 'Deportes 1')
+SELECT * FROM dual;
+
 
 insert into prerreq values  (02 , 'Mixta' , 001 , 1 ),
 							(02 , 'Mixta' , 002 , 2 ),
@@ -76,14 +82,17 @@ insert into prerreq values  (02 , 'Mixta' , 001 , 1 ),
 							(02 , 'Mixta' , 008 , 9 ),
 							(02 , 'Mixta' , 009 , 10 );
 
-insert into catedratico values (0324 , 'Flanders' , 9000),
-							(0343 , 'Chapatin' , 10000),
-							(0456 , 'Integral' , 7900),
-							(0765 , 'El Pelón de Brazzer' , 8000),
-							(0543 , 'Buffer' , 10000),
-							(0786 , 'Chocomax' , 11000),
-							(0987 , 'El dragon' , 1000),
-							(0999 , 'Sata' , 13700);
+insert all 
+into catedratico values (324 , 'Flanders' , 9000)
+into catedratico values (343 , 'Chapatin' , 10000)
+into catedratico values (456 , 'Integral' , 7900)
+into catedratico values (765 , 'El Pelón' , 8000)
+into catedratico values (543 , 'Buffer' , 1000)
+into catedratico values (786 , 'Chocomax' , 11000)
+into catedratico values (987 , 'El dragon' , 1000)
+into catedratico values (999 , 'Sata' , 13700)
+SELECT * FROM dual;
+
 
 insert into seccion values	('A' , '2021' , 'Segundo Semestre 2021' , 0100 , 0324),
 							('A-' , '2021' , 'Segundo Semestre 2021' , 101 , 0343),
@@ -115,13 +124,15 @@ insert into asignacion values (2013012345 , 0100 , 'A' , 2021 , 'Segundo Semestr
 							(2020012345 , 0152 , 'C' , 2021 , 'Segundo Semestre 2021' , 30 , 30),
 							(2016012345 , 0137 , 'B-' , 2021 , 'Segundo Semestre 2021' , 20 , 20),
 							(2021012345 , 0176 , 'C+' , 2021 , 'Segundo Semestre 2021' , 5 , 5);
+insert all 
+into dia values (1 , 'Lunes')
+into dia values (2 , 'Martes')
+into dia values (3 , 'Miercoles')
+into dia values (4 , 'Jueves')
+into dia values (5 , 'Viernes')
+into dia values (6 , 'Sabado')
+SELECT * FROM dual;
 
-insert into dia values 		(1 , 'Lunes'),
-							(2 , 'Martes'),
-							(3 , 'Miercoles'),
-							(4 , 'Jueves'),
-							(5 , 'Viernes'),
-							(6 , 'Sabado');
 
 insert into salon values 	('T-3' , '104'),
 							('T-3' , '107'),
@@ -134,16 +145,19 @@ insert into salon values 	('T-3' , '104'),
 							('T-4' , '100'),
 							('T-1' , '103');
 
-insert into periodo values 	(1, ),
-							(2, ),
-							(3, ),
-							(4, ),
-							(5, ),
-							(6, ),
-							(7, ),
-							(8, ),
-							(9, ),
-							(10, );
+insert all 
+into periodo values (1, TO_DATE('10/09/2000 07:10','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 08:50','DD/MM/YYYY  HH24:MI'))
+into periodo values (2, TO_DATE('10/09/2000 08:50','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 09:40','DD/MM/YYYY  HH24:MI'))
+into periodo values (3, TO_DATE('10/09/2000 09:40','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 10:30','DD/MM/YYYY  HH24:MI'))
+into periodo values (4, TO_DATE('10/09/2000 10:30','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 11:20','DD/MM/YYYY  HH24:MI'))
+into periodo values (5, TO_DATE('10/09/2000 11:20','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 12:10','DD/MM/YYYY  HH24:MI'))
+into periodo values (6, TO_DATE('10/09/2000 12:10','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 13:00','DD/MM/YYYY  HH24:MI'))
+into periodo values (7, TO_DATE('10/09/2000 13:00','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 13:50','DD/MM/YYYY  HH24:MI'))
+into periodo values (8, TO_DATE('10/09/2000 13:50','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 14:40','DD/MM/YYYY  HH24:MI'))
+into periodo values (9, TO_DATE('10/09/2000 14:40','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 15:30','DD/MM/YYYY  HH24:MI'))
+into periodo values (10, TO_DATE('10/09/2000 15:30','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 16:20','DD/MM/YYYY  HH24:MI'))
+SELECT * FROM dual;
+
 
 insert into horario values 	(),
 							(),
