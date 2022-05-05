@@ -1,13 +1,16 @@
-insert into estudiante values	(2012012345, 'La pirulina' , '2500' , '17/05/1985'),
-								(2013012345, 'Tecun human' , '3700' , '21/01/1994'),
-								(2014012345, 'El chapulin colorado' , '5000' , '21/05/1990'),
-								(2015012345, 'Elizabeth olsen' , '4300' , '31/11/1990'),
-								(2016012345, 'Pedro de Alvarado' , '4000' , '30/05/1992'),
-								(2017012345, 'Bladimir zelensky' , '5000' , '15/01/2000'),
-								(2018012345, 'Jhon baiden' , '3570' , '11/01/2000'),
-								(2019012345, 'Neto bran' , '8000' , '26/02/1982'),
-								(2020012345, 'Gloria Alvarez' , '6000' , '04/11/2021'),
-								(2021012345, 'Pelé' , '7000' , '07/07/2000');
+--Select
+select * from estudiante;
+
+
+
+--Insert
+
+
+insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201800546,'Erick Alvarado',3000,TO_DATE('10/09/2000','DD/MM/YYYY'));
+insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201800465,'Christian Salvatore',4000,TO_DATE('08/03/1995','DD/MM/YYYY'));
+insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201709878,'Javier Torres',8000,TO_DATE('31/10/2005','DD/MM/YYYY'));
+insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201600437,'Alexander Guerra',10000,TO_DATE('22/02/2002','DD/MM/YYYY'));
+
 
 insert into carrera values 	(01 , 'Ingenieria Ambiental'),
 							(02 , 'Ingenieria Industrial'),
