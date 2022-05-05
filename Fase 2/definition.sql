@@ -56,15 +56,13 @@ CREATE TABLE asignacion (
     nota                    INTEGER NOT NULL,
     estudiante_carnet       INTEGER NOT NULL,
     seccion_seccion         VARCHAR2(2 CHAR) NOT NULL,
-    seccion_codigo          INTEGER NOT NULL,
-    seccion_catedratico_cat INTEGER NOT NULL
+    seccion_codigo          INTEGER NOT NULL
 );
 
 ALTER TABLE asignacion
     ADD CONSTRAINT asignacion_pk PRIMARY KEY ( estudiante_carnet,
                                                seccion_seccion,
-                                               seccion_codigo,
-                                               seccion_catedratico_cat );
+                                               seccion_codigo);
 
 
 

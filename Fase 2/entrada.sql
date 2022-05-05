@@ -10,6 +10,8 @@ insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (2
 insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201800465,'Christian Salvatore',4000,TO_DATE('08/03/1995','DD/MM/YYYY'));
 insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201709878,'Javier Torres',8000,TO_DATE('31/10/2005','DD/MM/YYYY'));
 insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201600437,'Alexander Guerra',10000,TO_DATE('22/02/2002','DD/MM/YYYY'));
+insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201500987,'Sonia Guerra',55000,TO_DATE('02/04/1964','DD/MM/YYYY'));
+
 
 
 insert into carrera values 	(01 , 'Ingenieria Ambiental'),
