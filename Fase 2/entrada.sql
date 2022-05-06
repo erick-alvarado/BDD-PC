@@ -74,14 +74,14 @@ insert into prerreq values  (02 , 'Mixta' , 001 , 1 ),
 							(02 , 'Mixta' , 008 , 9 ),
 							(02 , 'Mixta' , 009 , 10 );
 
-insert into catedratico values (0324 , 'Flanders' , 9000),
-							(0343 , 'Chapatin' , 10000),
-							(0456 , 'Integral' , 7900),
-							(0765 , 'El Pelón de Brazzer' , 8000),
-							(0543 , 'Buffer' , 10000),
-							(0786 , 'Chocomax' , 11000),
-							(0987 , 'El dragon' , 1000),
-							(0999 , 'Sata' , 13700);
+insert into catedratico values (0324 , 'Erick Alexander' , 9000),
+							(0343 , 'Cristian Daniel' , 10000),
+							(0456 , 'Jose Monrroy' , 7900),
+							(0765 , 'Estefany Valenzuela' , 8000),
+							(0543 , 'Carlos López' , 10000),
+							(0786 , 'Helen Martinez' , 11000),
+							(0987 , 'Caterin López' , 1000),
+							(0999 , 'Irma Patzan' , 13700);
 
 insert into seccion values	('A' , '2021' , 'Segundo Semestre 2021' , 0100 , 0324),
 							('A-' , '2021' , 'Segundo Semestre 2021' , 101 , 0343),
