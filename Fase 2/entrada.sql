@@ -141,7 +141,7 @@ insert into pensum values   (017 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- h
 insert into pensum values   (019 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- humanistica 2
 insert into pensum values   (101 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 68);  -- mb1
 insert into pensum values   (103 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 68);  -- mb2
-insert into pensum values   (147 , 'Mixta' , 03 , '1' , 17 , 61 , 36 , 102);  -- fb
+insert into pensum values   (147 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 102);  -- fb
 insert into pensum values   (150 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 102);  -- fisica 1
 insert into pensum values   (152 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- fisica 2
 insert into pensum values   (107 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- inter 1
@@ -151,6 +151,74 @@ insert into pensum values   (118 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- a
 insert into pensum values   (120 , 'Mixta' , 05 , '0' , 17 , 61 , 36 , 0);  -- apli 2
 insert into pensum values   (116 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 238);  -- apli 3
 insert into pensum values   (122 , 'Mixta' , 05 , '0' , 17 , 61 , 36 , 238);  -- apli 4
+
+insert into pensum values   (039 , 'Mixta' , 02 , '0' , 17 , 61 , 36 , 0);  -- deportes 1
+insert into pensum values   (040 , 'Mixta' , 02 , '0' , 17 , 61 , 36 , 0);  -- deportes 2
+insert into pensum values   (017 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- humanistica
+insert into pensum values   (019 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- humanistica 2
+insert into pensum values   (101 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 68);  -- mb1
+insert into pensum values   (103 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 68);  -- mb2
+insert into pensum values   (147 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 102);  -- fb
+insert into pensum values   (150 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 102);  -- fisica 1
+insert into pensum values   (152 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- fisica 2
+insert into pensum values   (107 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- inter 1
+insert into pensum values   (112 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- inter 2
+insert into pensum values   (114 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- inter 3
+insert into pensum values   (118 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- apli 1
+insert into pensum values   (120 , 'Mixta' , 02 , '0' , 17 , 61 , 36 , 0);  -- apli 2
+insert into pensum values   (116 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 238);  -- apli 3
+insert into pensum values   (122 , 'Mixta' , 02 , '0' , 17 , 61 , 36 , 238);  -- apli 4
+
+insert into pensum values   (039 , 'Mixta' , 04 , '0' , 17 , 61 , 36 , 0);  -- deportes 1
+insert into pensum values   (040 , 'Mixta' , 04 , '0' , 17 , 61 , 36 , 0);  -- deportes 2
+insert into pensum values   (017 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- humanistica
+insert into pensum values   (019 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- humanistica 2
+insert into pensum values   (101 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 68);  -- mb1
+insert into pensum values   (103 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 68);  -- mb2
+insert into pensum values   (147 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 102);  -- fb
+insert into pensum values   (150 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 102);  -- fisica 1
+insert into pensum values   (152 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- fisica 2
+insert into pensum values   (107 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- inter 1
+insert into pensum values   (112 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- inter 2
+insert into pensum values   (114 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- inter 3
+insert into pensum values   (118 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- apli 1
+insert into pensum values   (120 , 'Mixta' , 04 , '0' , 17 , 61 , 36 , 0);  -- apli 2
+insert into pensum values   (116 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 238);  -- apli 3
+insert into pensum values   (122 , 'Mixta' , 04 , '0' , 17 , 61 , 36 , 238);  -- apli 4
+
+insert into pensum values   (039 , 'Mixta' , 06 , '0' , 17 , 61 , 36 , 0);  -- deportes 1
+insert into pensum values   (040 , 'Mixta' , 06 , '0' , 17 , 61 , 36 , 0);  -- deportes 2
+insert into pensum values   (017 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- humanistica
+insert into pensum values   (019 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- humanistica 2
+insert into pensum values   (101 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 68);  -- mb1
+insert into pensum values   (103 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 68);  -- mb2
+insert into pensum values   (147 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 102);  -- fb
+insert into pensum values   (150 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 102);  -- fisica 1
+insert into pensum values   (152 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- fisica 2
+insert into pensum values   (107 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- inter 1
+insert into pensum values   (112 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- inter 2
+insert into pensum values   (114 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- inter 3
+insert into pensum values   (118 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- apli 1
+insert into pensum values   (120 , 'Mixta' , 06 , '0' , 17 , 61 , 36 , 0);  -- apli 2
+insert into pensum values   (116 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 238);  -- apli 3
+insert into pensum values   (122 , 'Mixta' , 06 , '0' , 17 , 61 , 36 , 238);  -- apli 4
+
+insert into pensum values   (039 , 'Mixta' , 08 , '0' , 17 , 61 , 36 , 0);  -- deportes 1
+insert into pensum values   (040 , 'Mixta' , 08 , '0' , 17 , 61 , 36 , 0);  -- deportes 2
+insert into pensum values   (017 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- humanistica
+insert into pensum values   (019 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- humanistica 2
+insert into pensum values   (101 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 68);  -- mb1
+insert into pensum values   (103 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 68);  -- mb2
+insert into pensum values   (147 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 102);  -- fb
+insert into pensum values   (150 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 102);  -- fisica 1
+insert into pensum values   (152 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- fisica 2
+insert into pensum values   (107 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- inter 1
+insert into pensum values   (112 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- inter 2
+insert into pensum values   (114 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- inter 3
+insert into pensum values   (118 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- apli 1
+insert into pensum values   (120 , 'Mixta' , 08 , '0' , 17 , 61 , 36 , 0);  -- apli 2
+insert into pensum values   (116 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 238);  -- apli 3
+insert into pensum values   (122 , 'Mixta' , 08 , '0' , 17 , 61 , 36 , 238);  -- apli 4
 -- SISTEMAS
 insert into pensum values   (770 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- 
 insert into pensum values   (771 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- 
@@ -187,3 +255,180 @@ insert into pensum values   (332 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  --
 insert into pensum values   (324 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- 
 insert into pensum values   (7991 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- 
 commit
+
+
+
+
+
+
+-- **********************************************************
+-- AREA COMUN
+-- **********************************************************
+-- sistemas
+insert into prerreq values (05 , 'Mixta' , 017 , 039 ); -- social 1
+insert into prerreq values (05 , 'Mixta' , 019 , 040 ); -- social 2
+insert into prerreq values (05 , 'Mixta' , 101 , 017 ); -- mb 1
+insert into prerreq values (05 , 'Mixta' , 103 , 019 ); -- mb 2
+insert into prerreq values (05 , 'Mixta' , 152 , 150 ); -- fisica 2
+insert into prerreq values (05 , 'Mixta' , 112 , 107 ); -- inter2
+insert into prerreq values (05 , 'Mixta' , 114 , 107 ); -- inter3
+insert into prerreq values (05 , 'Mixta' , 116 , 118 ); -- apli3
+insert into prerreq values (05 , 'Mixta' , 122 , 120 ); -- apli4
+-- industrial
+insert into prerreq values (02 , 'Mixta' , 017 , 039 ); -- social 1
+insert into prerreq values (02 , 'Mixta' , 019 , 040 ); -- social 2
+insert into prerreq values (02 , 'Mixta' , 101 , 017 ); -- mb 1
+insert into prerreq values (02 , 'Mixta' , 103 , 019 ); -- mb 2
+insert into prerreq values (02 , 'Mixta' , 152 , 150 ); -- fisica 2
+insert into prerreq values (02 , 'Mixta' , 112 , 107 ); -- inter2
+insert into prerreq values (02 , 'Mixta' , 114 , 107 ); -- inter3
+insert into prerreq values (02 , 'Mixta' , 116 , 118 ); -- apli3
+insert into prerreq values (02 , 'Mixta' , 122 , 120 ); -- apli4
+select * from prerreq
+delete from prerreq
+-- quimica
+insert into prerreq values (04 , 'Mixta' , 017 , 039 ); -- social 1
+insert into prerreq values (04 , 'Mixta' , 019 , 040 ); -- social 2
+insert into prerreq values (04 , 'Mixta' , 101 , 017 ); -- mb 1
+insert into prerreq values (04 , 'Mixta' , 103 , 019 ); -- mb 2
+insert into prerreq values (04 , 'Mixta' , 152 , 150 ); -- fisica 2
+insert into prerreq values (04 , 'Mixta' , 112 , 107 ); -- inter2
+insert into prerreq values (04 , 'Mixta' , 114 , 107 ); -- inter3
+insert into prerreq values (04 , 'Mixta' , 116 , 118 ); -- apli3
+insert into prerreq values (04 , 'Mixta' , 122 , 120 ); -- apli4
+-- mecanica 
+insert into prerreq values (06 , 'Mixta' , 017 , 039 ); -- social 1
+insert into prerreq values (06 , 'Mixta' , 019 , 040 ); -- social 2
+insert into prerreq values (06 , 'Mixta' , 101 , 017 ); -- mb 1
+insert into prerreq values (06 , 'Mixta' , 103 , 019 ); -- mb 2
+insert into prerreq values (06 , 'Mixta' , 152 , 150 ); -- fisica 2
+insert into prerreq values (06 , 'Mixta' , 112 , 107 ); -- inter2
+insert into prerreq values (06 , 'Mixta' , 114 , 107 ); -- inter3
+insert into prerreq values (06 , 'Mixta' , 116 , 118 ); -- apli3
+insert into prerreq values (06 , 'Mixta' , 122 , 120 ); -- apli4
+-- civil
+insert into prerreq values (08 , 'Mixta' , 017 , 039 ); -- social 1
+insert into prerreq values (08 , 'Mixta' , 019 , 040 ); -- social 2
+insert into prerreq values (08 , 'Mixta' , 101 , 017 ); -- mb 1
+insert into prerreq values (08 , 'Mixta' , 103 , 019 ); -- mb 2
+insert into prerreq values (08 , 'Mixta' , 152 , 150 ); -- fisica 2
+insert into prerreq values (08 , 'Mixta' , 112 , 107 ); -- inter2
+insert into prerreq values (08 , 'Mixta' , 114 , 107 ); -- inter3
+insert into prerreq values (08 , 'Mixta' , 116 , 118 ); -- apli3
+insert into prerreq values (08 , 'Mixta' , 122 , 120 ); -- apli4
+
+-- ************************************************************************
+-- OBLIGATORIAS AREA PROFESIONAL
+-- ************************************************************************
+insert into prerreq values (05 , 'Mixta' , 720 , 770 );
+insert into prerreq values (05 , 'Mixta' , 777 , 771 );
+insert into prerreq values (05 , 'Mixta' , 729 , 729 );
+insert into prerreq values (02 , 'Mixta' , 200 , 661 );
+insert into prerreq values (02 , 'Mixta' , 202 , 632 );
+insert into prerreq values (04 , 'Mixta' , 434 , 430 );
+insert into prerreq values (04 , 'Mixta' , 436 , 418 );
+insert into prerreq values (04 , 'Mixta' , 7902 , 398 );
+insert into prerreq values (06 , 'Mixta' , 512 , 508 );
+insert into prerreq values (06 , 'Mixta' , 510 , 513 );
+insert into prerreq values (06 , 'Mixta' , 515 , 502 );
+insert into prerreq values (08 , 'Mixta' , 332 , 460 );
+insert into prerreq values (08 , 'Mixta' , 324 , 322 );
+insert into prerreq values (08 , 'Mixta' , 7991 , 320 );
+select * from prerreq
+commit
+
+
+
+-- ************************************************************************
+-- ************************************************************************
+insert into catedratico values ( 9001 , 'Catedratico 1' , 9700 , ' ');
+insert into catedratico values ( 9002 , 'Catedratico 2' , 9700 , ' ');
+insert into catedratico values ( 9003 , 'Catedratico 3' , 9700 , ' ');
+insert into catedratico values ( 9004 , 'Catedratico 4' , 9700 , ' ');
+insert into catedratico values ( 9005 , 'Catedratico 5' , 9700 , ' ');
+insert into catedratico values ( 9006 , 'Catedratico 6' , 9700 , ' ');
+insert into catedratico values ( 9007 , 'Catedratico 7' , 9700 , ' ');
+insert into catedratico values ( 9008 , 'Catedratico 8' , 9700 , ' ');
+insert into catedratico values ( 9009 , 'Catedratico 9' , 9700 , ' ');
+insert into catedratico values ( 9010 , 'Catedratico 10' , 9700 , ' ');
+insert into catedratico values ( 9011 , 'Catedratico 11' , 9700 , ' ');
+insert into catedratico values ( 9012 , 'Catedratico 12' , 9700 , ' ');
+select * from catedratico
+-- delete from catedratico
+commit
+
+
+
+
+-- ************************************************************************
+-- ************************************************************************
+insert into dia values(1 , 'Lunes');
+insert into dia values(2 , 'Martes');
+insert into dia values(3 , 'Miercoles');
+insert into dia values(4 , 'Jueves');
+insert into dia values(5 , 'Viernes');
+insert into dia values(6 , 'Sabado');
+select * from dia
+commit
+
+
+
+
+
+
+-- ************************************************************************
+-- ************************************************************************
+insert into salon values ('T-3' , '101' , 50 );
+insert into salon values ('T-3' , '102' , 50 );
+insert into salon values ('T-3' , '103' , 50 );
+insert into salon values ('T-3' , '104' , 50 );
+insert into salon values ('T-3' , '105' , 50 );
+insert into salon values ('T-3' , '106' , 50 );
+insert into salon values ('T-3' , '107' , 50 );
+insert into salon values ('T-3' , '108' , 50 );
+insert into salon values ('T-3' , '109' , 50 );
+insert into salon values ('T-3' , '110' , 50 );
+insert into salon values ('T-3' , '111' , 50 );
+insert into salon values ('T-3' , '112' , 50 );
+insert into salon values ('T-3' , '113' , 50 );
+insert into salon values ('T-3' , '114' , 50 );
+insert into salon values ('T-3' , '115' , 50 );
+insert into salon values ('T-3' , '116' , 50 );
+insert into salon values ('T-3' , '117' , 50 );
+insert into salon values ('T-3' , '118' , 50 );
+insert into salon values ('T-3' , '119' , 50 );
+insert into salon values ('T-3' , '120' , 50 );
+insert into salon values ('T-3' , '121' , 50 );
+insert into salon values ('T-3' , '122' , 50 );
+insert into salon values ('T-3' , '123' , 50 );
+insert into salon values ('T-3' , '124' , 50 );
+insert into salon values ('T-7' , 'L-II-1' , 65 );
+insert into salon values ('T-7' , 'L-II-2' , 65 );
+insert into salon values ('T-7' , 'L-II-3' , 65 );
+insert into salon values ('T-7' , 'L-II-4' , 65 );
+insert into salon values ('T-7' , 'L-II-5' , 65 );
+insert into salon values ('T-7' , 'L-III-1' , 65 );
+insert into salon values ('T-7' , 'L-III-2' , 65 );
+insert into salon values ('T-7' , 'L-III-3' , 65 );
+insert into salon values ('T-7' , 'L-III-4' , 65 );
+insert into salon values ('T-7' , 'L-III-5' , 65 );
+insert into salon values ('T-1' , '101' , 43 );
+insert into salon values ('T-1' , '102' , 43 );
+insert into salon values ('T-1' , '103' , 43 );
+insert into salon values ('T-1' , '104' , 43 );
+insert into salon values ('T-1' , '105' , 43 );
+insert into salon values ('T-1' , '106' , 43 );
+insert into salon values ('T-1' , '107' , 43 );
+insert into salon values ('T-1' , '108' , 43 );
+insert into salon values ('T-1' , '109' , 43 );
+insert into salon values ('T-1' , '110' , 43 );
+insert into salon values ('T-1' , '111' , 43 );
+insert into salon values ('T-1' , '112' , 43 );
+insert into salon values ('T-1' , '113' , 43 );
+insert into salon values ('T-1' , '114' , 43 );
+insert into salon values ('T-1' , '115' , 43 );
+select * from salon
+commit
+
+
+
