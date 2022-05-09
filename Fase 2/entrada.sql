@@ -430,5 +430,23 @@ insert into salon values ('T-1' , '115' , 43 );
 select * from salon
 commit
 
-
-
+-- **********************************************************
+-- **********************************************************
+-- Seccion 
+--SISTEMAS
+insert into seccion values(1,2021,'Segundo Semestre',17,9001); -- Catedratico 1, social humanistica 1
+insert into seccion values(1,2021,'Segundo Semestre',19,9002); -- Catedratico 2, social humanistica 2
+insert into seccion values(1,2021,'Segundo Semestre',101,9003); -- Catedratico 3, matematica basica 1
+insert into seccion values(1,2021,'Segundo Semestre',103,9004); -- Catedratico 4, matematica basica 2
+insert into seccion values(1,2021,'Segundo Semestre',150,9005); -- Catedratico 5, fisica 1
+insert into seccion values(1,2021,'Segundo Semestre',152,9006); -- Catedratico 6, fisica 2
+insert into seccion values(1,2021,'Segundo Semestre',107,9007); -- Catedratico 7, mate intermedia 1
+insert into seccion values(1,2021,'Segundo Semestre',112,9008); -- Catedratico 8, mate intermedia 2
+insert into seccion values(1,2021,'Segundo Semestre',114,9009); -- Catedratico 9, mate intermedia 3
+insert into seccion values(1,2021,'Segundo Semestre',118,9010); -- Catedratico 10,mate aplicada 1
+insert into seccion values(1,2021,'Segundo Semestre',116,9011); -- Catedratico 11,mate aplicada 3
+insert into seccion values(1,2021,'Segundo Semestre',770,9012); -- Catedratico 12, intr a la prog 1
+insert into seccion values(1,2021,'Segundo Semestre',771,9001); -- Catedratico 1, intro prog 2
+insert into seccion values(1,2021,'Segundo Semestre',729,9001); -- Catedratico 1, modela 1
+insert into seccion values(1,2021,'Segundo Semestre',720,9002); -- Catedratico 2, modela 2
+insert into seccion values(1,2021,'Segundo Semestre',777,9003); -- Catedratico 3, compi 1
