@@ -450,3 +450,30 @@ insert into seccion values(1,2021,'Segundo Semestre',771,9001); -- Catedratico 1
 insert into seccion values(1,2021,'Segundo Semestre',729,9001); -- Catedratico 1, modela 1
 insert into seccion values(1,2021,'Segundo Semestre',720,9002); -- Catedratico 2, modela 2
 insert into seccion values(1,2021,'Segundo Semestre',777,9003); -- Catedratico 3, compi 1
+insert into seccion values(1,2021,'Segundo Semestre',781,9005); -- Catedratico 5, fisica 1
+insert into seccion values(1,2021,'Segundo Semestre',147,9006); -- Catedratico 6, fisica 2
+
+
+-- **********************************************************
+-- **********************************************************
+-- Asignacion 
+--SISTEMAS cierre
+
+insert into asignacion values (201690999, 17,'A',2021,'Segundo Semestre',54,79);
+insert into asignacion values (201690999, 19,'A',2021,'Segundo Semestre',55,75);
+insert into asignacion values (201690999, 101,'A',2021,'Segundo Semestre',56,66);
+insert into asignacion values (201690999, 103,'A',2021,'Segundo Semestre',57,88);
+insert into asignacion values (201690999, 150,'A',2021,'Segundo Semestre',58,73);
+insert into asignacion values (201690999, 152,'A',2021,'Segundo Semestre',59,80);
+insert into asignacion values (201690999, 107,'A',2021,'Segundo Semestre',44,81);
+insert into asignacion values (201690999, 112,'A',2021,'Segundo Semestre',45,81);
+insert into asignacion values (201690999, 114,'A',2021,'Segundo Semestre',55,84);
+insert into asignacion values (201690999, 118,'A',2021,'Segundo Semestre',64,73);
+insert into asignacion values (201690999, 116,'A',2021,'Segundo Semestre',60,64);
+insert into asignacion values (201690999, 770,'A',2021,'Segundo Semestre',49,67);
+insert into asignacion values (201690999, 771,'A',2021,'Segundo Semestre',55,68);
+insert into asignacion values (201690999, 729,'A',2021,'Segundo Semestre',40,62);
+insert into asignacion values (201690999, 720,'A',2021,'Segundo Semestre',41,65);
+insert into asignacion values (201690999, 777,'A',2021,'Segundo Semestre',44,66);
+insert into asignacion values (201690999, 781,'A',2021,'Segundo Semestre',47,68);
+insert into asignacion values (201690999, 147,'A',2021,'Segundo Semestre',49,70);

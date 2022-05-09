@@ -79,6 +79,7 @@ and s.Ano = 2021
 and s.ciclo = 'segundo semestre'
 and c.nombre = 'curso_ejemplo'
 and cat.nombre = 'nombre_ejemplo'
+
 -- 4. Para un estudiante determinado que cerrado en alguna carrera, dar el nombre de los estudiantes que llevaron con él todos los cursos.
 
 with cursos_cierre as (
