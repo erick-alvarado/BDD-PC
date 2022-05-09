@@ -1,171 +1,189 @@
---Select
-select * from estudiante;
+-- ********************************************************************************************************************
+-- ********************************************************************************************************************
+insert into Carrera values (01 , 'Ingenieria Ambiental');
+insert into Carrera values  (02 , 'Ingenieria Industrial');
+insert into Carrera values (03 , 'Ingenieria Mecanica Industrial');
+insert into Carrera values (04 , 'Ingenieria Quimica');
+insert into Carrera values  (05 , 'Ingenieria Sistemas');
+insert into Carrera values  (06 , 'Ingenieria Mecanica');
+insert into Carrera values  (07 , 'Ingenieria Electrica');
+insert into Carrera values  (08 , 'Ingenieria Civil');
+SELECT * FROM Carrera; 
+commit;
+--  delete from Carrera
 
 
 
---Insert
+insert into Estudiante  VALUES (201545826,'Sonia Guerra',4500,TO_DATE('02/04/1964','DD/MM/YYYY'));
+insert into Estudiante  VALUES (201848960,'Oli Batz',6000,TO_DATE('10/09/2000','DD/MM/YYYY'));
+insert into Estudiante  VALUES (201812211,'Dalis Samayoa',4000,TO_DATE('08/03/1995','DD/MM/YYYY'));
+insert into Estudiante  VALUES (201725223,'Javier Torres',8000,TO_DATE('31/10/2005','DD/MM/YYYY'));
+insert into Estudiante  VALUES (201690999,'Alexander Guerra',2900,TO_DATE('22/02/2002','DD/MM/YYYY'));
+insert into Estudiante  VALUES (201547744 , 'Sofia Alejandra' , 5000 , TO_DATE('02/04/1990' , 'DD/MM/YYYY'));
+insert into Estudiante  VALUES (201244444 , 'Irma Dolores' , 6000 , TO_DATE('02/03/1991' , 'DD/MM/YYYY'));
+insert into Estudiante  VALUES (201533333 , 'Caterin López' , 3400 , TO_DATE('02/02/1988' , 'DD/MM/YYYY'));
+insert into Estudiante  VALUES (201522222 , 'Aracely Morales' , 3100 , TO_DATE('01/09/1987' , 'DD/MM/YYYY'));
+insert into Estudiante  VALUES (201511111 , 'Beatriz López' , 4500 , TO_DATE('22/11/1989' , 'DD/MM/YYYY'));
+select * from Estudiante;
+commit;
+-- delete from estudiante
 
 
-insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201800546,'Erick Alvarado',3000,TO_DATE('10/09/2000','DD/MM/YYYY'));
-insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201800465,'Christian Salvatore',4000,TO_DATE('08/03/1995','DD/MM/YYYY'));
-insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201709878,'Javier Torres',8000,TO_DATE('31/10/2005','DD/MM/YYYY'));
-insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201600437,'Alexander Guerra',10000,TO_DATE('22/02/2002','DD/MM/YYYY'));
-insert into estudiante (carnet,nombre,ingresoFamiliar,fechanacimiento) VALUES (201500987,'Sonia Guerra',55000,TO_DATE('02/04/1964','DD/MM/YYYY'));
 
 
 
-insert all 
-into carrera values (01 , 'Ingenieria Ambiental')
-into carrera values	(02 , 'Ingenieria Industrial')
-into carrera values (03 , 'Ingenieria Mecanica Industrial')
-into carrera values (04 , 'Ingenieria Quimica')
-into carrera values	(05 , 'Ingenieria Sistemas')
-into carrera values	(06 , 'Ingenieria Mecanica')
-into carrera values	(07 , 'Ingenieria Electrica')
-into carrera values	(08 , 'Ingenieria Civil')
-SELECT * FROM dual; 
+
+insert into Inscrito values (2 , 201545826 , TO_DATE('19/11/2015','DD/MM/YYYY'));
+insert into Inscrito values (08 , 201848960 , TO_DATE('21/11/2018','DD/MM/YYYY'));
+insert into Inscrito values (02 , 201812211 , TO_DATE('21/11/2018','DD/MM/YYYY'));
+insert into Inscrito values (07 , 201725223 , TO_DATE('15/11/2017','DD/MM/YYYY'));
+insert into Inscrito values (05 , 201690999 , TO_DATE('15/11/2016','DD/MM/YYYY'));
+insert into Inscrito values (06 , 201547744 , TO_DATE('19/11/2015','DD/MM/YYYY'));
+insert into Inscrito values (02 , 201244444 , TO_DATE('21/11/2012','DD/MM/YYYY'));
+insert into Inscrito values (02 , 201533333 , TO_DATE('21/11/2015','DD/MM/YYYY'));
+insert into Inscrito values (02 , 201522222 , TO_DATE('21/11/2015','DD/MM/YYYY'));
+insert into Inscrito values (05 , 201511111 , TO_DATE('15/11/2015','DD/MM/YYYY'));
+SELECT * FROM Inscrito;
+commit;
+-- delete from inscrito
 
 
-insert into inscrito values (02 , 2012012345 , '19/11/2021'),
-							(08 , 2013012345 , '21/11/2021'),
-							(02 , 2014012345 , '21/11/2021'),
-							(07 , 2015012345 , '15/11/2021'),
-							(05 , 2016012345 , '15/11/2021'),
-							(06 , 2017012345 , '19/11/2021'),
-							(02 , 2018012345 , '21/11/2021'),
-							(02 , 2019012345 , '21/11/2021'),
-							(02 , 2020012345 , '21/11/2021'),
-							(04 , 2021012345 , '15/11/2021');
-
-insert into plan values 	('Mixta' , 01 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2020' , 'Segundo Semestre' , 250),
-							('Mixta' , 02 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2020' , 'Segundo Semestre' , 250),
-							('Mixta' , 03 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2020' , 'Segundo Semestre' , 250),
-							('Vespertina' , 04 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2020' , 'Segundo Semestre' , 250),
-							('Vespertina' , 05 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2020' , 'Segundo Semestre' , 250),
-							('Mixta' , 06 , '' , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2020' , 'Segundo Semestre' , 250),
-							('Mixta' , 07 , '' , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2020' , 'Segundo Semestre' , 250),
-							('Mixta' , 08 , '' , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2020' , 'Segundo Semestre' , 250);
-
-insert into pensum values 	(001 , 'Mixta' , 01 , '1' , 250 , 61 , 36 , 46),
-							(002 , 'Mixta' , 02 , '1' , 250 , 61 , 36 , 46),
-							(003 , 'Vespertina' , 05 , '1' , 250 , 61 , 36 , 46),
-							(004 , 'Mixta' , 03 , '1' , 250 , 61 , 36 , 46),
-							(005 , 'Mixta' , 09 , '1' , 250 , 61 , 36 , 46),
-							(006 , 'Vespertina' , 04 , '1' , 250 , 61 , 36 , 46),
-							(007 , 'Vespertina' , 01 , '1' , 250 , 61 , 36 , 46),
-							(008 , 'Mixta' , 06 , '1' , 250 , 61 , 36 , 46),
-							(009 , 'Mixta' , 07 , '1' , 250 , 61 , 36 , 46),
-							(0010 , 'Vespertina' , 08 , '1' , 250 , 61 , 36 , 46);
-
-insert all 
-into curso values (0100 , 'Matematica Basica 1')
-into curso values (0101 , 'Quimica General 1')
-into curso values (0113 , 'Matematica Basica 2')
-into curso values (0125 , 'Fisica Basica')
-into curso values (0137 , 'Fisica 1')
-into curso values (0149 , 'Fisica 2')
-into curso values (0152 , 'Matematica Intermedia 2')
-into curso values (0164 , 'Orientación y Liderazgo')
-into curso values (0176 , 'Matematica Intermedia 1')
-into curso values (0188 , 'Deportes 1')
-SELECT * FROM dual;
 
 
-insert into prerreq values  (02 , 'Mixta' , 001 , 1 ),
-							(02 , 'Mixta' , 002 , 2 ),
-							(04 , 'Mixta' , 001 , 3 ),
-							(03 , 'Vespertina' , 003 , 4 ),
-							(07 , 'Vespertina' , 004 , 5 ),
-							(09 , 'Mixta' , 005 , 6 ),
-							(08 , 'Mixta' , 006 , 7 ),
-							(02 , 'Mixta' , 007 , 8 ),
-							(02 , 'Mixta' , 008 , 9 ),
-							(02 , 'Mixta' , 009 , 10 );
-
-insert all 
-into catedratico values (324 , 'Flanders' , 9000)
-into catedratico values (343 , 'Chapatin' , 10000)
-into catedratico values (456 , 'Integral' , 7900)
-into catedratico values (765 , 'El Pelón' , 8000)
-into catedratico values (543 , 'Buffer' , 1000)
-into catedratico values (786 , 'Chocomax' , 11000)
-into catedratico values (987 , 'El dragon' , 1000)
-into catedratico values (999 , 'Sata' , 13700)
-SELECT * FROM dual;
+insert into Plan values ('Mixta' , 01 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2025' , 'Segundo Semestre' , 250);
+insert into plan values ('Mixta' , 02 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2025' , 'Segundo Semestre' , 250);
+insert into plan values ('Mixta' , 03 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2025' , 'Segundo Semestre' , 250);
+insert into plan values ('Mixta' , 04 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2025' , 'Segundo Semestre' , 250);
+insert into plan values ('Mixta' , 05 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2025' , 'Segundo Semestre' , 250);
+insert into plan values ('Mixta' , 06 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2025' , 'Segundo Semestre' , 250);
+insert into plan values ('Mixta' , 07 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2025' , 'Segundo Semestre' , 250);
+insert into plan values ('Mixta' , 08 , 'Jornada Completa' , '2010' , 'Primer Semestre' , '2025' , 'Segundo Semestre' , 250);
+select * from plan;
+commit;
+-- delete from plan
 
 
-insert into seccion values	('A' , '2021' , 'Segundo Semestre 2021' , 0100 , 0324),
-							('A-' , '2021' , 'Segundo Semestre 2021' , 101 , 0343),
- 							('A+' , '2021' , 'Segundo Semestre 2021' , 0113 , 0456),
-							('B' , '2021' , 'Segundo Semestre 2021' , 0125 , 0765),
-							('B-' , '2021' , 'Segundo Semestre 2021' , 0137 , 0543),
-							('B+' , '2021' , 'Segundo Semestre 2021' , 0149 , 0786);
-							('C' , '2021' , 'Segundo Semestre 2021' , 0152 , 0987),
-							('C-' , '2021' , 'Segundo Semestre 2021' , 0164 , 0999),
-							('C+' , '2021' , 'Segundo Semestre 2021' , 0176 , 0324),
-							('D' , '2021' , 'Segundo Semestre 2021' , 0188 , 0343);
+-- **********************************************************
+-- AREA BASICA 8 SEMESTRES   -    2 CLASES X CADA SEMESTRE
+-- **********************************************************
+insert into curso values (039 , 'deportes 1');  -- 1
+insert into curso values (040 , 'deportes 2');  -- 1
+insert into curso values (017 , 'social humanistica 1');    -- 2
+insert into curso values (019 , 'social humanistica 2');    -- 2
+insert into curso values (101 , 'matematica basica 1'); -- 3
+insert into curso values (103 , 'matematica basica 2'); -- 3
+insert into curso values (147 , 'fisica basica');   -- 4
+insert into curso values (150 , 'fisica 1');    -- 4
+insert into curso values (152 , 'fisica 2');    -- 5
+insert into curso values (107 , 'mate intermedia 1');   -- 5
+insert into curso values (112 , 'mate intermedia 2');   -- 6
+insert into curso values (114 , 'mate intermedia 3');   -- 6
+insert into curso values (118 , 'mate aplicada 1');   -- 7
+insert into curso values (120 , 'mate aplicada 2');   -- 7
+insert into curso values (116 , 'mate aplicada 3');   -- 8
+insert into curso values (122 , 'mate aplicada 4');   -- 8
+select * from curso
+commit
+-- delete from curso
 
-insert into asignacion values (2013012345 , 0100 , 'A' , 2021 , 'Segundo Semestre 2021' , 41 , 62),
-							(2014012345 , 0113 , 'A+' , 2021 , 'Segundo Semestre 2021' , 30 , 30),
-							(2013012345 , 0101 , 'A-' , 2021 , 'Segundo Semestre 2021' , 50 , 70),
-							(2021012345 , 0137 , 'B-' , 2021 , 'Segundo Semestre 2021' , 49 , 70),
-							(2021012345 , 0101 , 'A-' , 2021 , 'Segundo Semestre 2021' , 36 , 61),
-							(2014012345 , 0101 , 'A-' , 2021 , 'Segundo Semestre 2021' , 20 , 20),
-							(2016012345 , 0176 , 'C+' , 2021 , 'Segundo Semestre 2021' , 27 , 27),
-							(2015012345 , 0152 , 'C' , 2021 , 'Segundo Semestre 2021' 60 , 80),
-							(2017012345 , 0152 , 'C' , 2021 , 'Segundo Semestre 2021' , 36 , 59),
-							(2014012345 , 0188 , 'D' , 2021 , 'Segundo Semestre 2021' , 60 , 85),
-							(2018012345 , 0152 , 'C' , 2021 , 'Segundo Semestre 2021' , 35 , 35),
-							(2021012345 , 0188 , 'D' , 2021 , 'Segundo Semestre 2021' , 70 , 90),
-							(2019012345 , 0164 , 'C-' , 2021 , 'Segundo Semestre 2021' , 75 , 100),
-							(2015012345 , 0164 , 'C-' , 2021 , 'Segundo Semestre 2021' , 75 , 90),
-							(2019012345 , 0188 , 'D' , 2021 , 'Segundo Semestre 2021' , 75 , 100),
-							(2018012345 , 0101 , 'A-' , 2021 , 'Segundo Semestre 2021' , 10 , 10),
-							(2020012345 , 0152 , 'C' , 2021 , 'Segundo Semestre 2021' , 30 , 30),
-							(2016012345 , 0137 , 'B-' , 2021 , 'Segundo Semestre 2021' , 20 , 20),
-							(2021012345 , 0176 , 'C+' , 2021 , 'Segundo Semestre 2021' , 5 , 5);
-insert all 
-into dia values (1 , 'Lunes')
-into dia values (2 , 'Martes')
-into dia values (3 , 'Miercoles')
-into dia values (4 , 'Jueves')
-into dia values (5 , 'Viernes')
-into dia values (6 , 'Sabado')
-SELECT * FROM dual;
+-- **********************************************************
+--  ESPECIFICA 3 CLASES X SEMESTRE
+-- **********************************************************
+-- SISTEMAS  05-VESPERTINA
+insert into curso values (770 , 'intr. a la prog. y computacion 1');    -- 9
+insert into curso values (771 , 'intro. a la prog. y computacion 2');   -- 9
+insert into curso values (729 , 'modelacion y simulacion 1');           -- 9
+insert into curso values (720 , 'modelacion y simulacion 2');           -- 10
+insert into curso values (777 , 'org. lenguajes y compiladores 1');     -- 10
+insert into curso values (781 , 'org. lenguajes y compiladores 2');     -- 10
+
+-- INDUSTRIAL  02-MIXTA
+insert into curso values (660 , 'mercadotecnia 1');         -- 9
+insert into curso values (661 , 'mercadotecnia 2');         -- 9
+insert into curso values (632 , 'ingenieria de plantas');   -- 9
+insert into curso values (634 , 'ingenieria de metodos');   -- 10
+insert into curso values (200 , 'ing. electrica 1');        -- 10
+insert into curso values (202 , 'ing. electrica 2');        -- 10
+
+-- QUIMICA  04-VESPERTIRNA
+insert into curso values (430 , 'quimica 2');                       --9
+insert into curso values (418 , 'IQ5 trans. masa en u. continuas'); --9
+insert into curso values (398 , 'cinetica de procesos quimicos');   --9
+insert into curso values (434 , 'procesos quimicos industriales');  --10
+insert into curso values (436 , 'diseño de equipos');               --10
+insert into curso values (7902 , 'seminario quimica');              --10
+
+-- MECANICA  06-MIXTA
+insert into curso values (508 , 'montaje y mantenimiento de equipo');   --9
+insert into curso values (513 , 'mant. de hospitales 1');               --9
+insert into curso values (502 , 'refrigeración y aire acondicionado');  --9
+insert into curso values (512 , 'instrumentacion mecanica');            --10
+insert into curso values (510 , 'instalaciones mecanicas');             --10
+insert into curso values (515 , 'mant. de hospitales 1');               --10
+
+-- CIVIL  08-MIXTA
+insert into curso values (460 , 'pavimentos');              --9
+insert into curso values (322 , 'diseño estructural');      --9
+insert into curso values (320 , 'cimentaciones 1');         --9
+insert into curso values (332 , 'puentes');                 --10
+insert into curso values (324 , 'diseño estructural 2');    --10
+insert into curso values (7991 , 'seminario civil');        --10
 
 
-insert into salon values 	('T-3' , '104'),
-							('T-3' , '107'),
-							('T-3' , '109'),
-							('T-7' , 'L-II-1'),
-							('T-1' , '102'),
-							('T-3' , '205'),
-							('T-7' , 'L-II-3'),
-							('T-3' , '209'),
-							('T-4' , '100'),
-							('T-1' , '103');
-
-insert all 
-into periodo values (1, TO_DATE('10/09/2000 07:10','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 08:50','DD/MM/YYYY  HH24:MI'))
-into periodo values (2, TO_DATE('10/09/2000 08:50','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 09:40','DD/MM/YYYY  HH24:MI'))
-into periodo values (3, TO_DATE('10/09/2000 09:40','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 10:30','DD/MM/YYYY  HH24:MI'))
-into periodo values (4, TO_DATE('10/09/2000 10:30','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 11:20','DD/MM/YYYY  HH24:MI'))
-into periodo values (5, TO_DATE('10/09/2000 11:20','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 12:10','DD/MM/YYYY  HH24:MI'))
-into periodo values (6, TO_DATE('10/09/2000 12:10','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 13:00','DD/MM/YYYY  HH24:MI'))
-into periodo values (7, TO_DATE('10/09/2000 13:00','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 13:50','DD/MM/YYYY  HH24:MI'))
-into periodo values (8, TO_DATE('10/09/2000 13:50','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 14:40','DD/MM/YYYY  HH24:MI'))
-into periodo values (9, TO_DATE('10/09/2000 14:40','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 15:30','DD/MM/YYYY  HH24:MI'))
-into periodo values (10, TO_DATE('10/09/2000 15:30','DD/MM/YYYY HH24:MI'), TO_DATE('10/09/2000 16:20','DD/MM/YYYY  HH24:MI'))
-SELECT * FROM dual;
 
 
-insert into horario values 	(),
-							(),
-							(),
-							(),
-							(),
-							(),
-							(),
-							(),
-							(),
-							();
+-- **********************************************************
+-- **********************************************************
+-- AREA BASICA
+insert into pensum values   (039 , 'Mixta' , 05 , '0' , 17 , 61 , 36 , 0);  -- deportes 1
+insert into pensum values   (040 , 'Mixta' , 05 , '0' , 17 , 61 , 36 , 0);  -- deportes 2
+insert into pensum values   (017 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- humanistica
+insert into pensum values   (019 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- humanistica 2
+insert into pensum values   (101 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 68);  -- mb1
+insert into pensum values   (103 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 68);  -- mb2
+insert into pensum values   (147 , 'Mixta' , 03 , '1' , 17 , 61 , 36 , 102);  -- fb
+insert into pensum values   (150 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 102);  -- fisica 1
+insert into pensum values   (152 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- fisica 2
+insert into pensum values   (107 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- inter 1
+insert into pensum values   (112 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- inter 2
+insert into pensum values   (114 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- inter 3
+insert into pensum values   (118 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- apli 1
+insert into pensum values   (120 , 'Mixta' , 05 , '0' , 17 , 61 , 36 , 0);  -- apli 2
+insert into pensum values   (116 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 238);  -- apli 3
+insert into pensum values   (122 , 'Mixta' , 05 , '0' , 17 , 61 , 36 , 238);  -- apli 4
+-- SISTEMAS
+insert into pensum values   (770 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (771 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (729 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (720 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (777 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (781 , 'Mixta' , 05 , '1' , 17 , 61 , 36 , 0);  -- 
+-- INDUSTRIAL
+insert into pensum values   (660 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (661 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (632 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (634 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (200 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (202 , 'Mixta' , 02 , '1' , 17 , 61 , 36 , 0);  -- 
+-- QUIMICA
+insert into pensum values   (430 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (418 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (398 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (434 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (436 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (7902 , 'Mixta' , 04 , '1' , 17 , 61 , 36 , 0);  -- 
+-- MECANICA
+insert into pensum values   (508 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (513 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (502 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (512 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (510 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (515 , 'Mixta' , 06 , '1' , 17 , 61 , 36 , 0);  -- 
+-- CIVIL
+insert into pensum values   (460 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (322 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (320 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (332 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (324 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- 
+insert into pensum values   (7991 , 'Mixta' , 08 , '1' , 17 , 61 , 36 , 0);  -- 
+commit
