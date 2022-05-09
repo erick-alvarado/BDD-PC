@@ -138,3 +138,15 @@ LEFT join Asignacion a
 on e.carnet = a.carnet
 where (a.nota) > (select avg(nota) from Asignacion)and (FLOOR((MONTHS_BETWEEN(CURRENT_DATE, e.FECHANACIMIENTO ) / 12))) < (select avg( FLOOR((MONTHS_BETWEEN(CURRENT_DATE, FECHANACIMIENTO ) / 12))) from ESTUDIANTE)
 
+
+--consulta 7
+create or replace trigger Convertir
+after insert
+on CATEDRATICO
+for each row
+begin
+    UPDATE CATEDRATICO
+        SET SUELDOLETRA = UPPER(TO_CHAR(TO_DATE(:new.SUELDOMENSUAL,'J'),'Jsp'))
+        WHERE CAT = :new.CAT;
+end Convertir;
+
