@@ -129,7 +129,7 @@ where e.carnet != es.carnet and s.codigo = se.codigo
 
 
 --consulta 6
-select c.nombre, e.nombre from Carrera c
+select distinct c.nombre, e.nombre from Carrera c
 left join inscrito i
 on c.carrera = i.carrera
 left join Estudiante e
