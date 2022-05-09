@@ -114,9 +114,9 @@ and a.zona >= p.zonaMinima
 group by ec.carnet,ec.nombre
 
 --consulkta 5
-select e.nombre || ' ' || es.nombre from estudiante e
+select distinct e.nombre || ' ' || es.nombre from estudiante e
 left join estudiante es
-on e.nombre = es.nombre
+on e.nombre != es.nombre
 left join Asignacion a
 on e.carnet = a.carnet
 left join Asignacion asi
