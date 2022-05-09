@@ -9,21 +9,22 @@ with cursos_cierre as (
 ),
 -- Verificar estudiantes cerrados
 cursos_aprobados_estudiantes as(
-    select e.carnet,e.nombre, count() as aprobados from asignacion a
+    select e.carnet,e.nombre, count(*) as aprobados from asignacion a
     inner join estudiante e on e.carnet = a.carnet
-    inner join inscrito i on e.carnet = e.carnet
+    inner join inscrito i on i.carnet = e.carnet
     inner join carrera c on c.carrera = i.carrera
     where a.codigo = (select cc.codigo from cursos_cierre cc where cc.codigo = a.codigo)
-    and c.nombre = 'sistemas'
+    and c.nombre = 'Ingenieria Sistemas'
     group by e.carnet,e.nombre
 ),
 estudiantes_cerrados as (
     select cae.carnet,cae.nombre from cursos_aprobados_estudiantes cae 
-    where cae.aprobados = (select count() from cursos_cierre)
+    where cae.aprobados = (select count(*) from cursos_cierre)
 )
 select ec.carnet,ec.nombre, AVG(a.nota) as promedio, SUM(p.numCreditos) from asignacion a 
 inner join estudiantes_cerrados ec on ec.carnet = a.carnet
-inner join pensum p on p.codigo = a.codigo
+inner join inscrito i on i.carnet = ec.carnet
+inner join pensum p on p.codigo = a.codigo and p.carrera = i.carrera
 where a.nota >= p.notaAprobacion
 and a.zona >= p.zonaMinima
 group by ec.carnet,ec.nombre
@@ -35,50 +36,48 @@ group by ec.carnet,ec.nombre
 with cursos_cierre_carrera as (
     select p.carrera, cu.codigo,cu.nombre from pensum p 
     inner join curso cu on cu.codigo = p.codigo
-    where p.obligatoriedad = 'v'
+    where p.obligatoriedad = '1'
     order by p.carrera
 ),
 -- Verificar estudiantes cerrados
 cursos_aprobados_estudiantes as(
-    select ccc.carrera,e.carnet,e.nombre, count() as aprobados from asignacion a
+    select i.carrera, e.carnet,e.nombre, count(*) as aprobados from asignacion a
     inner join estudiante e on e.carnet = a.carnet
-    inner join cursos_cierre_carrera ccc on ccc.codigo = a.codigo
-    group by ccc.carrera,e.carnet,e.nombre
+    inner join inscrito i on i.carnet = e.carnet
+    where a.codigo = (select cc.codigo from cursos_cierre_carrera cc where cc.codigo = a.codigo and cc.carrera = i.carrera )
+    group by i.carrera, e.carnet,e.nombre
 ),
 estudiantes_cerrados as (
-    select cae.carnet,cae.nombre, from cursos_aprobados_estudiantes cae 
-    where cae.aprobados = (select count() from cursos_cierre where cae.carrera = cursos_cierre.carrera)
+    select cae.carrera,cae.carnet,cae.nombre from cursos_aprobados_estudiantes cae 
+    where cae.aprobados = (select count(*) from cursos_cierre_carrera ccc where ccc.carrera = cae.carrera)
 )
-select ec.carnet,ec.nombre,c.nombre , AVG(a.nota) as promedio, SUM(p.numCreditos) from asignacion a 
+select car.nombre,ec.carnet,ec.nombre, AVG(a.nota) as promedio, SUM(p.numCreditos) from asignacion a 
 inner join estudiantes_cerrados ec on ec.carnet = a.carnet
-inner join pensum p on p.codigo = a.codigo
-inner join carrera c on c.carrera = p.carrera
+inner join inscrito i on i.carnet = ec.carnet
+inner join carrera car on car.carrera = ec.carrera
+inner join pensum p on p.codigo = a.codigo and p.carrera = i.carrera
 where a.nota >= p.notaAprobacion
 and a.zona >= p.zonaMinima
-group by ec.carnet,ec.nombre,c.nombre
+group by car.nombre,ec.carnet,ec.nombre
 
 
 -- 3. Dar el nombre de los estudiantes que han ganado algún curso con alguno de los catedráticos que han impartido alguno de los cursos de la carrera de sistemas 
 -- en alguno de los planes que se impartieron en el semestre pasado.
 
-carrera = sistemas
-plan = semestre pasado
-
-select e.nombre from estudiante e
-inner join asignacion a on a.carnet = e.carnet
-inner join seccion s on s.seccion = a.seccion 
+select e.nombre,c.nombre,cat.nombre from seccion s 
+inner join catedratico cat on cat.cat = s.catedratico_cat 
+inner join asignacion a on a.seccion = s.seccion and a.codigo = s.codigo and a.ciclo = s.ciclo and a.ano = s.ano
+inner join estudiante e on e.carnet = a.carnet
+inner join inscrito i on i.carnet = a.carnet
+inner join pensum p on p.codigo = a.codigo and p.carrera = i.carrera 
 inner join curso c on c.codigo = s.codigo
-inner join pensum p on codigo = c.codigo
-inner join plan pl on pl.plan = p.plan
-inner join catedratico cat on cat.cat = s.Catedratico_Cat
-inner join carrera ca on ca.carrera = pl.carrera
 where a.nota >= p.notaAprobacion
 and a.zona >= p.zonaMinima
-and ca.nombre = 'sistemas'
+and i.carrera = 5
 and s.Ano = 2021
-and s.ciclo = 'segundo semestre'
-and c.nombre = 'curso_ejemplo'
-and cat.nombre = 'nombre_ejemplo'
+and s.ciclo = 'Segundo Semestre'
+and c.nombre = 'matematica basica 1'
+and cat.nombre = 'Catedratico 3'
 
 -- 4. Para un estudiante determinado que cerrado en alguna carrera, dar el nombre de los estudiantes que llevaron con él todos los cursos.
 
