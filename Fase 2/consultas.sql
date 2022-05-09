@@ -112,3 +112,29 @@ inner join pensum p on p.codigo = a.codigo
 where a.nota >= p.notaAprobacion
 and a.zona >= p.zonaMinima
 group by ec.carnet,ec.nombre
+
+--consulkta 5
+select e.nombre || ' ' || es.nombre from estudiante e
+left join estudiante es
+on e.nombre = es.nombre
+left join Asignacion a
+on e.carnet = a.carnet
+left join Asignacion asi
+on es.carnet = asi.carnet
+left join seccion s
+on s.SECCION = a.SECCION
+left join Seccion se
+on se.SECCION = asi.SECCION
+where e.carnet != es.carnet and s.codigo = se.codigo
+
+
+--consulta 6
+select c.nombre, e.nombre from Carrera c
+left join inscrito i
+on c.carrera = i.carrera
+left join Estudiante e
+on i.carnet = e.carnet
+LEFT join Asignacion a
+on e.carnet = a.carnet
+where (a.nota) > (select avg(nota) from Asignacion)and (FLOOR((MONTHS_BETWEEN(CURRENT_DATE, e.FECHANACIMIENTO ) / 12))) < (select avg( FLOOR((MONTHS_BETWEEN(CURRENT_DATE, FECHANACIMIENTO ) / 12))) from ESTUDIANTE)
+
